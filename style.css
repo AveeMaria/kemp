@@ -1,0 +1,177 @@
+:root {
+	--bg-color: #CDCEC6;
+	--bg-color-transparent: rgb(0, 0, 0, 0.6);
+
+	--text-color: #e8ebf7;
+	--navbar-color: #3b9169;
+	--navbar-text-color: purple;
+	--title-color: #4BD36D;/*#CCECE5;*/
+	--footer-color: #544B3D;
+}
+
+p, a {
+	color: var(--text-color);
+	font-size: 1.2rem;
+}
+
+h1, h2, h3 {
+	font-size: 2.5rem;
+	box-shadow: 2px;
+}
+
+html {
+	font-family:  -apple-system, 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	background-image: url(droneshot.png);
+	background-size: cover;
+	background-attachment: fixed;
+	top: 0;
+	left: 0;
+}
+
+body {
+	background-color: var(--bg-color-transparent);
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 5vh;
+}
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+
+		width: 100vw;
+		max-width: 100vw;
+
+		height: 10vh;
+		max-height: 10vh;
+
+		background-color: var(--navbar-color);
+	}
+
+		.nav-menu {
+			display: none;
+		}
+
+		.logo {
+			height: 100%;
+			max-height: 10vh;
+			/*max-width: 10vh; /*daje 1:1 upsi aspekt*/
+			aspect-ratio: 1 / 1;
+		}
+
+		.nav-links {
+			max-width: 90vw;
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+			display: flex;
+			justify-content: space-between;
+			align-content: center;
+		}
+
+			.nav-links li {
+				padding: 0 2em;
+				margin: 0;
+				align-content: center;
+			}
+
+			.nav-links li a {
+				font-size: 1.5rem;
+
+				color: var(--navbar-text-color);
+
+				/*filter: invert(1);*/
+
+				font-weight: bold;
+
+				padding: 0;
+				margin: 0;
+				text-decoration: none;
+			}
+
+				.nav-links li a:hover, .nav-links li a:active {
+					padding: 0;
+					margin: 0;
+					text-decoration: none;
+				}
+
+h1,h2 {
+	color: var(--title-color);
+	font-weight: bold;
+}
+
+.container {
+	background-color: rgba(200, 200, 200, 0.4);/*azure white nardi nek glasseffect mby kr error*/
+	backdrop-filter: blur(5px);
+	
+	max-width: 80vw;
+	width: 70%;
+	padding: 5%;
+	margin: 5% auto;
+
+	border-radius: 10px;
+}
+	.container p, ul, li, a {
+		color: var(--text-color);
+		margin-left: 2em;¸
+		/*filter: invert(1);*/
+	}
+
+	#faking-prvi-otrok {
+		/*kurcev first-child nedela*/
+		padding: 0;
+		margin: 0 auto;
+		background-color: rgba(0, 0, 0, 0);
+		backdrop-filter: none;
+	}
+
+#moto-container {
+	height: 90vh;
+	display: block;
+	text-align: center;
+	align-content: center;
+	background-color: skibidi;
+	padding: 0;
+	margin: 0;
+	backdrop-filter: blur(0.5px);
+}
+
+
+
+
+
+
+/* ------------------- MOBILNIKI -------------------  */
+
+
+
+
+
+@media (max-width: 800px) {
+	.nav-links {
+		display: none;
+	}
+
+	.nav-menu {
+		display: flex;
+		align-content: center;
+		max-height: 10vh;
+		height: 100%;
+	}
+}
+
+
+
+
+/* za fuherfox */
+.hide-scrollbar {
+    scrollbar-width: none;
+}
+
+/* za 50shades of chromium */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
