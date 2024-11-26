@@ -5,19 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Camp Muhvič</title>
 	<link rel="stylesheet" href="style.css">
-	<script type="array.js"></script>
+	<script type="script.js"></script>
 </head>
 <body>
 	<header>
 		<nav>
 			<img class="logo" src="logo.png">
-			<ul class="nav-links">
+			<ul class="nav-links" id="nav-links-list">
 				<li><a href="#about">About</a></li>		
 				<li><a href="#contact">Contact</a></li>		
 				<li><a href="#activites">Activities</a></li>
 				<li><a href="#accomodation">Accomodation</a></li>
 			</ul>
-			<img src="menu.svg" class="nav-menu">
+			<img src="menu.svg" onclick="toggleMenu()" class="nav-menu" id="navbar-menu">
 		</nav>
 	</header>
 	<body>
@@ -40,9 +40,9 @@
 		<section id="contact" class="container">
 			<h2>Contact</h2>
 			<ul id="contact-list">
-				<li><a href="mailto:makybregy2@gmail.com">makybregy2@gmail.com</a></li>				
-				<li>+386 0000 00 00 0</li>				
-				<li>John Doe strasse 2</li>				
+				<li><span class="seznam"><a href="mailto:makybregy2@gmail.com">makybregy2@gmail.com</a></span></li>
+				<li><span class="seznam">+386 0000 00 00 0</span></li>				
+				<li><span class="seznam">John Doe strasse 2</span></li>				
 			</ul>
 		</section>
 		<section id="activites" class="container">
@@ -72,5 +72,11 @@
 	<footer>
 		
 	</footer>
+	<script>
+		function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+	</script>
 </body>
 </html>
