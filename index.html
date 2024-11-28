@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Camp Muhvič</title>
 	<link rel="stylesheet" href="style.css">
 	<script type="script.js"></script>
+	<link rel="icon" href="assets/logo.jpg" type="image/x-icon">
 </head>
 <body>
 	<header>
 		<nav>
-			<img class="logo" src="logo.png">
+			<img class="logo" src="assets/logo.jpg">
 			<ul class="nav-links" id="nav-links-list">
-				<li><a href="#about">About</a></li>		
-				<li><a href="#contact">Contact</a></li>		
-				<li><a href="#activites">Activities</a></li>
-				<li><a href="#accomodation">Accomodation</a></li>
+				<li><a onclick="toggleMenu()" href="#about">About</a></li>		
+				<li><a onclick="toggleMenu()" href="#contact">Contact</a></li>		
+				<li><a onclick="toggleMenu()" href="#activites">Activities</a></li>
+				<li><a onclick="toggleMenu()" href="#accomodation">Accomodation</a></li>
 			</ul>
-			<img src="menu.svg" onclick="toggleMenu()" class="nav-menu" id="navbar-menu">
+			<img src="assets/menu.svg" onclick="toggleMenu()" class="nav-menu" id="navbar-menu">
 		</nav>
 	</header>
 	<body>
 		<section class="container" id="faking-prvi-otrok">
 			<div id="moto-container">
-				<h1><b>EXPLORE. EVOLVE. ENUMERATE.</b></h1>
+				<h1><b>Tourism Muhvič</b></h1>
 				<h2>Since 1994</h2>
 			</div>
 		</section>
@@ -49,7 +50,6 @@
 			<h2>Activites</h2>
 			<p>The campsite is great for people who like water sports such as swimming, rafting, fishing and canoeing and people who like land based sports hiking and running.</p>
 
-
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -70,7 +70,7 @@
 		</section>
 	</body>
 	<footer>
-		
+		<!--<p>Made by me</p>-->
 	</footer>
 	<script>
 		function toggleMenu() {

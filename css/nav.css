@@ -1,0 +1,115 @@
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+
+	width: 100%;
+	max-width: 100vw;
+
+	height: 10vh;
+	max-height: 10vh;
+
+	background-color: var(--navbar-color);
+}
+
+	.nav-menu {
+		display: none;
+	}
+
+	.logo {
+		height: 100%;
+		max-height: 10vh;
+		/*max-width: 10vh; /*daje 1:1 upsi aspekt*/
+		aspect-ratio: 1 / 1;
+	}
+
+	.nav-links {
+		max-width: 90vw;
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+	}
+
+		.nav-links li {
+			padding: 0 2em;
+			margin: 0;
+			align-content: center;
+		}
+
+		.nav-links li a {
+			font-size: 1.5rem;
+
+			color: var(--navbar-text-color);
+
+			/*filter: invert(1);*/
+
+			font-weight: bold;
+
+			padding: 0;
+			margin: 0;
+			text-decoration: none;
+		}
+
+			.nav-links li a:hover, .nav-links li a:active {
+				padding: 0;
+				margin: 0;
+				text-decoration: none;
+			}
+
+
+
+
+/* ------------------- MOBILNIKI -------------------  */
+
+@media (max-width: 800px) {
+	nav {
+	    position: relative; /* Needed for z-index to take effect */
+	    z-index: 10;
+	}
+
+	.nav-menu {
+		display: flex;
+		align-content: center;
+		max-height: 10vh;
+		height: 100%;
+	}
+
+	.nav-links {
+		/*display: none; kr cene je nevidn med animacijo :(*/
+		
+		display: flex;
+	    justify-content: center;
+	    flex-direction: column;
+
+	    opacity: 0;
+	    overflow: hidden;
+
+		/*ebsolute bols kt fixed kr se ne stikne na ekran*/
+	    position: absolute;
+	    top: 10vh;
+	    left: 0;
+
+	    z-index: 1;
+
+		transform: translateY(-100%);/*izvenekranizacija*/
+        transition: transform 0.3s ease-out, opacity 0.15s ease-out;
+	}
+
+		.nav-links.show {
+	        transform: translateY(0); /* Brings it into view */
+		    opacity: 1;				/* Make it visible */
+	    	z-index: -1; /*zkj je treba doktorirat iz tega wtf*/
+		}
+
+	ul.show {
+		width: 100vw;
+		max-width: 100vw;
+		background-color: var(--navbar-color);
+	}
+		ul.show li {
+			text-align: left;
+	}
+}

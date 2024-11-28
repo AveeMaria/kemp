@@ -1,0 +1,11 @@
+:root {
+	--bg-color: #CDCEC6;
+	--bg-color-transparent: rgb(0, 0, 0, 0.6);
+
+	--text-color: #e8ebf7;
+	--navbar-color: #3b9169;
+	--navbar-text-color: purple;
+	--title-color: #4BD36D;/*#CCECE5;*/
+	--footer-color: #544B3D;
+	--container-bg-color: rgba(200, 200, 200, 0.4);/*will the real slim shady please stand up?*/
+}

@@ -1,0 +1,24 @@
+.container {
+	background-color: var(--container-bg-color);/*azure white nardi nek glasseffect mby kr error*/
+	backdrop-filter: blur(5px);
+	
+	max-width: 80vw;
+	width: 70%;
+	padding: 5%;
+	margin: 5% auto;
+
+	border-radius: 10px;
+}
+	.container p, ul, li, a {
+		color: var(--text-color);
+		margin: 0 0em;
+		/*filter: invert(1);*/
+	}
+
+	#faking-prvi-otrok {
+		/*kurcev first-child nedela*/
+		padding: 0;
+		margin: 0 auto;
+		background-color: rgba(0, 0, 0, 0);
+		backdrop-filter: none;
+	}

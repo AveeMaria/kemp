@@ -1,0 +1,11 @@
+/* SCROLLBAR JE ZA BOOMERJE! */
+
+/* za fuherfox */
+html {
+    scrollbar-width: none;
+}
+
+/* za 50shades of chromium */
+html::-webkit-scrollbar {
+    display: none;
+}

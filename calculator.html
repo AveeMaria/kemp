@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Muhvič Calculator</title>
+	<link rel="stylesheet" href="mergedcalcstyle.css">
+
+	<script>
+		/*
+		// Smooth scrolling for navbar links
+		document.querySelectorAll('#navbar a').forEach(anchor => {
+		    anchor.addEventListener('click', function(e) {
+		        e.preventDefault();  // Prevent default anchor click behavior
+
+		        const targetId = this.getAttribute('href');  // Get the href of the clicked anchor
+		        const targetElement = document.querySelector(targetId);  // Find the target section
+
+		        // Scroll to the target element smoothly
+		        targetElement.scrollIntoView({
+		            behavior: 'smooth'
+		        });
+		    });
+		});
+		*/
+	</script>
+</head>
+
+<body>
+	<img src="assets/background.jpg" class="html_background_image">
+
+	<div id="page-container">
+	<div id="navbar-container">
+		<nav id="navbar">
+			<img id="logo" src="assets/logo.jpg">
+			<ul>
+				<li><a href="#calc">Calculate the cost of your stay</a></li>
+		    </ul>
+			<a href="index.html"><img id="home" src="assets/logo.jpg"></a>
+	    </nav>
+	</div>
+	<div id="calc-receipt">
+   		<div class="container">
+   		<div id="calc">
+            <h2>Calculator</h2><hr>
+            <p>Prices are based on 2024 <a href="cenik.pdf">price list</a>, they may change.</p>
+            
+            <h2>People</h2>
+            <label>Adults: 
+            	<input type="number" id="adults" placeholder="number of adults" min="0" max="50" value="1" required>
+			</label>
+            <br><br>
+
+			<label>Children 14-18 years old:
+            	<input type="number" id="children14to18" placeholder="number of children 14 to 18 years" min="0" max="50" value="0">
+        	</label>
+            <br><br>
+
+            <label>Children 6-14 years old:
+            	<input type="number" id="children6to14" placeholder="number of children 6 to 14 years" min="0" max="50" value="0">
+        	</label>
+        	<br><br>
+
+            <label>Children 0-6 years old:
+            	<input type="number" id="children0to6" placeholder="number of children 0 to 6 years" min="0" max="50" value="0">
+        	</label>
+            <br><br>
+
+            <h2>Vehicles</h2>
+            <label>Cars: 
+            	<input type="number" id="cars" placeholder="number of cars" min="0" max="5" value="0">
+			</label>
+
+            <label>Campers:
+            	<input type="number" id="campers" placeholder="number of campers" min="0" max="5" value="0">
+    		</label>
+
+    		<label>Trailers:
+            	<input type="number" id="trailers" placeholder="number of trailers" min="0" max="5" value="0">
+    		</label>
+
+			<h2>Other</h2>
+
+			<form>
+			<label>Electricity: 
+				<select id="electricity" name="choice" required>
+					<option value="false">No</option>
+					<option value="true">Yes</option>
+				</select>
+			</label>
+			</form>
+			<br>
+
+            <label>Number of pets: 
+            	<input type="number" id="pets" placeholder="number of pets" min="0" max="5" value="0">
+			</label>
+            <br><br>
+
+            <label><u>Number of days</u>: 
+            	<input type="number" id="days" placeholder="number of days" min="1" max="100" value="1" required>
+			</label>
+            <br><br>
+
+            <button class="btn" id="calculate">Calculate!</button>
+    	</div>
+	</div>  
+
+	<!-- calculaor-receipt barrier -->
+	<div class="container">
+		<div id="receipt">	
+
+			<div id="t_items">
+			<h2>Receipt</h2><hr>
+			<table id="receipt-items">
+				<tr>
+					<th>Service</th>
+					<th>Qtt</th>
+					<th>Price</th>
+				</tr>
+
+				<tr id="receipt_adults" class="hidden">
+					<td>Adults </td>
+					<td id="u_adults"></td>
+					<td id="p_adults"></td>
+				</tr>
+
+				<tr id="receipt_children14to18" class="hidden">
+					<td>Children 14-18 </td>
+					<td id="u_14to18"></td>
+					<td id="p_14to18"></td>
+				</tr>
+
+				<tr id="receipt_children6to14" class="hidden">
+					<td>Children 6-14 </td>
+					<td id="u_6to14"></td>
+					<td id="p_6to14"></td>
+				</tr>
+
+				<tr id="receipt_children0to6" class="hidden">
+					<td>Children 0-6 </td>
+					<td id="u_0to6"></td>
+					<td id="p_0to6"></td>
+				</tr>
+
+				<tr id="receipt_adult_tax" class="hidden">
+					<td>Turist tax adults </td>
+					<td id="u_adult_tax"></td>
+					<td id="p_adult_tax"></td>
+				</tr>
+
+				<tr id="receipt_children_tax" class="hidden">
+					<td>Turist tax children 0-18 </td>
+					<td id="u_child_tax"></td>
+					<td id="p_child_tax"></td>
+				</tr>
+
+				<tr id="receipt_pets" class="hidden">
+					<td>Pet: </td>
+					<td id="u_pets"></td>
+					<td id="p_pets"></td>
+				</tr>
+
+				<tr id="receipt_electricity" class="hidden">
+					<td>Electricity </td>
+					<td id="u_electricity"></td>
+					<td id="p_electricity"></td>
+				</tr>
+
+				<tr id="receipt_cars" class="hidden">
+					<td>Car </td>
+					<td id="u_cars"></td>
+					<td id="p_cars"></td>
+				</tr>
+
+				<tr id="receipt_campers" class="hidden">
+					<td>Camper </td>
+					<td id="u_campers"></td>
+					<td id="p_campers"></td>
+				</tr>
+
+				<tr id="receipt_trailers" class="hidden">
+					<td>Camping trailer</td>
+					<td id="u_trailers"></td>
+					<td id="p_trailers"></td>
+				</tr>
+			</table>
+			</div>
+			
+			<div id="t_total">
+			<hr>
+			<table id="total_row">
+				<tr id="receipt_table_footer">
+					<td>Total: </td>
+					<td></td>
+					<td id="totalprice">0 €</td>
+				</tr>
+				<tr id="receipt_table_footer_daily">
+					<td>Daily total: </td>
+					<td></td>
+					<td id="dailyprice">0 €</td>
+				</tr>
+			</table>
+			</div>
+			</div>
+			</div>
+		</div>
+	
+	<!-- INFO BELOW -->
+
+    <section id="info">
+       	<div class="container">
+       		<h2>Info</h2>
+			<p>We do not charge for cars parked in the parking lot outside.</p>
+			<p>Tents, motorcycles and bicycles are free of charge.</p>
+			<p>Children under 6 years old are taxed for, but we do not charge their accomodation.</p>
+       	</div>
+    </section>
+
+	</div>
+
+    <script loading="lazy" src="calculator.js" type="text/javascript"></script>
+</body>
+</html>
