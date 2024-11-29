@@ -5,6 +5,7 @@
 @import url("css/misc.css");
 @import url("css/text.css");
 @import url("css/mobile.css");
+@import url("css/btn.css");
 
 html {
 	font-family:  -apple-system, 'Roboto', 'Helvetica', 'Arial', sans-serif;

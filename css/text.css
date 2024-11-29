@@ -29,20 +29,44 @@ h1, h2 {
 	padding: 0;
 }
 
-
 p, a {
 	color: var(--text-color);
 	font-size: 1.5rem;
-	font-weight: 600;
+	font-weight: var(--text-weight);
 }
 
 .seznam, .seznam a{
 	font-size: 1.5rem;/*zkj si cringe bro?*/
-	font-weight: 600;
+	font-weight: var(--text-weight);
 }
 
 h1, h2, h3 {
 	font-size: 2.0rem;
 	font-weight: 1000;
 	box-shadow: 2px;
+}
+
+/*to je za kalkulatorij*/
+    .container label {
+        margin-left: 1em;
+		font-size: 1.0rem;
+        color: var(--text-color);
+    }
+
+/* ------------------- MOBILNIKI -------------------  */
+
+@media (max-width: 800px) {
+	
+	/*MANJSHI THEXT*/
+	p, a {
+		color: var(--text-color);
+		font-size: 1.2rem;
+		font-weight: var(--text-weight);
+	}
+
+	/* da contact list ni prevelk */
+	.seznam, .seznam a{
+		font-size: 1.2rem;/*zkj si cringe bro?*/
+		font-weight: var(--text-weight);
+	}
 }

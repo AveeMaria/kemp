@@ -1,0 +1,121 @@
+@import url("style.css"); /*a je to dobra ideja*/
+
+#calc-receipt {
+	margin: 0 auto;
+	padding: 0;
+
+	width: 80vw;
+	max-width: 80vw;
+
+	background-color: rgba(0, 0, 0, 0);
+	backdrop-filter: none;
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    align-items: stretch;
+}
+
+    #calc-receipt .container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* DA NI 2x margina */
+    #calc.container, #reciept.container {
+    	margin-bottom: 0;
+    }
+
+
+/*Receipt table style*/
+
+#receipt {
+    /*height: 100%;*/
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#receipt table {
+    width: 100%;
+}
+
+#receipt-items th:nth-child(1), #receipt-items td:nth-child(1) {
+    width: 55%;
+}
+
+#receipt-items th:nth-child(2), #receipt-items td:nth-child(2) {
+    width: 15%;
+    text-align: center;
+}
+
+#receipt-items th:nth-child(3), #receipt-items td:nth-child(3) {
+    width: 30%;
+    text-align: center;
+}
+
+#receipt-items td:nth-child(3) {
+    text-align: right;
+}
+
+#total_row td:nth-child(1) {
+    width: 55%;
+}
+
+#total_row td:nth-child(2) {
+    width: 15%;
+    text-align: center;
+}
+
+#total_row td:nth-child(3) {
+    width: 30%;
+    text-align: right;
+}
+
+#receipt-items th {
+    text-align: left;
+}
+
+#receipt-items td {
+    height: 1.75em;
+}
+
+tr.hidden, tr.hiddenByJS {
+    visibility: hidden;
+}
+
+tr.removed, tr.removedByJS {
+    display: none;
+}
+
+#receipt_table_footer td, #receipt_table_footer_daily td {
+    font-weight: bold;
+}
+
+#receipt-items {
+    flex: 1;
+    width: 100%;
+    color: var(--text-color);
+}
+
+	#receipt-items th {
+    	color: black;
+	}
+
+@media (max-width: 600px) {
+    #calc-receipt {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #calc-receipt .container {
+        width: 90%;
+    }
+
+    #calc-receipt .container:first-child {
+        margin-right: 0;
+    }
+}

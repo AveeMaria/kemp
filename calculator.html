@@ -4,8 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Muhvič Calculator</title>
-	<link rel="stylesheet" href="mergedcalcstyle.css">
-
+	<link rel="stylesheet" href="calculator.css">
 	<script>
 		/*
 		// Smooth scrolling for navbar links
@@ -24,91 +23,88 @@
 		});
 		*/
 	</script>
+	<link rel="icon" href="assets/logo.jpg" type="image/x-icon">
 </head>
 
 <body>
-	<img src="assets/background.jpg" class="html_background_image">
-
-	<div id="page-container">
-	<div id="navbar-container">
+	<header>
 		<nav id="navbar">
 			<img id="logo" src="assets/logo.jpg">
-			<ul>
+			
+			<!--<ul>
 				<li><a href="#calc">Calculate the cost of your stay</a></li>
-		    </ul>
-			<a href="index.html"><img id="home" src="assets/logo.jpg"></a>
+		    </ul>-->
+		    <!--<h1>Calculate the cost of your stay</h1>-->
 	    </nav>
-	</div>
-	<div id="calc-receipt">
-   		<div class="container">
-   		<div id="calc">
-            <h2>Calculator</h2><hr>
-            <p>Prices are based on 2024 <a href="cenik.pdf">price list</a>, they may change.</p>
-            
-            <h2>People</h2>
-            <label>Adults: 
-            	<input type="number" id="adults" placeholder="number of adults" min="0" max="50" value="1" required>
-			</label>
-            <br><br>
-
-			<label>Children 14-18 years old:
-            	<input type="number" id="children14to18" placeholder="number of children 14 to 18 years" min="0" max="50" value="0">
-        	</label>
-            <br><br>
-
-            <label>Children 6-14 years old:
-            	<input type="number" id="children6to14" placeholder="number of children 6 to 14 years" min="0" max="50" value="0">
-        	</label>
-        	<br><br>
-
-            <label>Children 0-6 years old:
-            	<input type="number" id="children0to6" placeholder="number of children 0 to 6 years" min="0" max="50" value="0">
-        	</label>
-            <br><br>
-
-            <h2>Vehicles</h2>
-            <label>Cars: 
-            	<input type="number" id="cars" placeholder="number of cars" min="0" max="5" value="0">
-			</label>
-
-            <label>Campers:
-            	<input type="number" id="campers" placeholder="number of campers" min="0" max="5" value="0">
-    		</label>
-
-    		<label>Trailers:
-            	<input type="number" id="trailers" placeholder="number of trailers" min="0" max="5" value="0">
-    		</label>
-
-			<h2>Other</h2>
-
+	</header>
+	<div id="calc-receipt" class="container">
+	 	<section class="container" id="calc">
 			<form>
-			<label>Electricity: 
-				<select id="electricity" name="choice" required>
-					<option value="false">No</option>
-					<option value="true">Yes</option>
-				</select>
-			</label>
-			</form>
-			<br>
+	            <h2>Calculator</h2><hr>
+	            <p>Prices are based on 2024 <a href="cenik.pdf">price list</a>, they may change.</p>
+	            
+	            <h2>People</h2>
+	            <label>Adults: 
+	            	<input type="number" id="adults" placeholder="number of adults" min="0" max="50" value="1" required>
+				</label>
+	            <br><br>
 
-            <label>Number of pets: 
-            	<input type="number" id="pets" placeholder="number of pets" min="0" max="5" value="0">
-			</label>
-            <br><br>
+				<label>Children 14-18 years old:
+	            	<input type="number" id="children14to18" placeholder="number of children 14 to 18 years" min="0" max="50" value="0">
+	        	</label>
+	            <br><br>
 
-            <label><u>Number of days</u>: 
-            	<input type="number" id="days" placeholder="number of days" min="1" max="100" value="1" required>
-			</label>
-            <br><br>
+	            <label>Children 6-14 years old:
+	            	<input type="number" id="children6to14" placeholder="number of children 6 to 14 years" min="0" max="50" value="0">
+	        	</label>
+	        	<br><br>
 
-            <button class="btn" id="calculate">Calculate!</button>
-    	</div>
-	</div>  
+	            <label>Children 0-6 years old:
+	            	<input type="number" id="children0to6" placeholder="number of children 0 to 6 years" min="0" max="50" value="0">
+	        	</label>
+	            <br><br>
 
-	<!-- calculaor-receipt barrier -->
-	<div class="container">
-		<div id="receipt">	
+	            <h2>Vehicles</h2>
+	            <label>Cars: 
+	            	<input type="number" id="cars" placeholder="number of cars" min="0" max="5" value="0">
+				</label>
 
+	            <label>Campers:
+	            	<input type="number" id="campers" placeholder="number of campers" min="0" max="5" value="0">
+	    		</label>
+
+	    		<label>Trailers:
+	            	<input type="number" id="trailers" placeholder="number of trailers" min="0" max="5" value="0">
+	    		</label>
+
+				<h2>Other</h2>
+
+				<form>
+				<label>Electricity: 
+					<select id="electricity" name="choice" required>
+						<option value="false">No</option>
+						<option value="true">Yes</option>
+					</select>
+				</label>
+				</form>
+				<br>
+
+	            <label>Number of pets: 
+	            	<input type="number" id="pets" placeholder="number of pets" min="0" max="5" value="0">
+				</label>
+	            <br><br>
+
+	            <label><u>Number of days</u>: 
+	            	<input type="number" id="days" placeholder="number of days" min="1" max="100" value="1" required>
+				</label>
+	            <br><br>
+	        </form>
+	        <button class="btn" id="calculate">Calculate!</button>
+	    </section>
+
+		<!-- calculaor-receipt barrier -->
+
+		<section class="container" id="receipt">
 			<div id="t_items">
 			<h2>Receipt</h2><hr>
 			<table id="receipt-items">
@@ -200,11 +196,8 @@
 					<td id="dailyprice">0 €</td>
 				</tr>
 			</table>
-			</div>
-			</div>
-			</div>
-		</div>
-	
+		</section>
+	</div>
 	<!-- INFO BELOW -->
 
     <section id="info">
@@ -215,8 +208,6 @@
 			<p>Children under 6 years old are taxed for, but we do not charge their accomodation.</p>
        	</div>
     </section>
-
-	</div>
 
     <script loading="lazy" src="calculator.js" type="text/javascript"></script>
 </body>
