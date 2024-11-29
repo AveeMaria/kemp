@@ -13,6 +13,19 @@
         color: mediumseagreen;
     }
 
+@media (max-width: 800px) {
+    #temp-container {
+        max-width: 25vw;
+        max-height: 5vh;
+
+        text-align: center;
+        align-content: center;
+
+        position: absolute;
+        right: 0;
+    }
+}
+
 /* SCROLLBAR JE ZA BOOMERJE! */
 
 /* za fuherfox */
