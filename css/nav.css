@@ -34,13 +34,13 @@ nav {
 	}
 
 		.nav-links li {
-			padding: 0 2em;
+			padding: 0 1em;
 			margin: 0;
 			align-content: center;
 		}
 
 		.nav-links li a {
-			font-size: 1.5rem;
+			font-size: 1.2rem;
 
 			color: var(--navbar-text-color);
 
@@ -103,6 +103,13 @@ nav {
 		    opacity: 1;				/* Make it visible */
 	    	z-index: -1; /*zkj je treba doktorirat iz tega wtf*/
 		}
+
+	.nav-links li {
+		padding: 0 2em;
+		margin: 0;
+		align-content: center;
+	}
+
 
 	ul.show {
 		width: 100vw;
