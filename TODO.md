@@ -2,11 +2,11 @@
 
 - lep dezign
 
-- splittej css-e
+- splittej css-e CHECK
 
 - prvi otrocek nedela
 
-- slow scroll na linke
+- slow scroll na linke CHECK
 
 - mailto cancer
 
@@ -18,15 +18,15 @@
 
 ### Activiy page
 
-- rafting, kanujing, kayaking, SUP-ing
+- rafting, kanujing, kayaking, SUP-ing (gif/video tega bi biu crazy!) (timelapse kolpe z kanuji od zgorej)
 - swimming, fishing(karte)
-- biking / hiking trails (interektive meps?)
+- biking / hiking trails (downloadable interektive meps?)
 
 # Narjeno sam dodaj
 
 - tolplota Kolpe
 
-- kalkulatorij obiska
+- kalkulatorij obiska CHECK
 
 - galerija (skor dela) 
 
