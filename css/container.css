@@ -1,6 +1,6 @@
 .container {
 	background-color: var(--container-bg-color);/*azure white nardi nek glasseffect mby kr error*/
-	backdrop-filter: blur(5px);
+	backdrop-filter: blur(var(--blur));
 	
 	max-width: 80vw;
 	width: 70%;
@@ -20,4 +20,5 @@
 		margin: 0 auto;
 		background-color: rgba(0, 0, 0, 0);
 		backdrop-filter: none;
+		/* to das da ni blura ce je --blur > 0 backdrop-filter: none;*/
 	}

@@ -1,6 +1,12 @@
 h1, h2 {
+	font-size: 2em;
+	font-weight: 1000;
+
 	color: var(--title-color);
+
 	font-weight: bold;
+	text-shadow: 1px 1px 3px black;
+	letter-spacing: 1px;
 }
 
 #moto-container {
@@ -31,27 +37,21 @@ h1, h2 {
 
 p, a {
 	color: var(--text-color);
-	font-size: 1.5rem;
+	font-size: var(--text-size);
 	font-weight: var(--text-weight);
 }
 
 .seznam, .seznam a{
-	font-size: 1.5rem;/*zkj si cringe bro?*/
+	font-size: var(--text-size);/*zkj si cringe bro?*/
 	font-weight: var(--text-weight);
 }
 
-h1, h2, h3 {
-	font-size: 2.0rem;
-	font-weight: 1000;
-	box-shadow: 2px;
-}
-
 /*to je za kalkulatorij*/
-    .container label {
-        margin-left: 1em;
-		font-size: 1.0rem;
-        color: var(--text-color);
-    }
+.container label {
+    margin-left: 1em;
+	font-size: var(--label-size);
+    color: var(--text-color);
+}
 
 /* ------------------- MOBILNIKI -------------------  */
 
@@ -60,13 +60,20 @@ h1, h2, h3 {
 	/*MANJSHI THEXT*/
 	p, a {
 		color: var(--text-color);
-		font-size: 1.2rem;
+		font-size: var(--text-size-mobile);
 		font-weight: var(--text-weight);
 	}
 
 	/* da contact list ni prevelk */
 	.seznam, .seznam a{
-		font-size: 1.2rem;/*zkj si cringe bro?*/
+		font-size: var(--text-size-mobile);/*zkj si cringe bro?*/
 		font-weight: var(--text-weight);
+	}
+
+	/*to je za kalkulatorij*/
+	.container label {
+	    margin-left: 0;
+		font-size: var(--label-size-mobile);
+	    color: var(--text-color);
 	}
 }

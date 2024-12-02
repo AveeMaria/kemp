@@ -1,0 +1,35 @@
+@import url("css/nav.css");
+@import url("css/root.css");
+
+html {
+	font-family:  -apple-system, 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	/*background-image: url(assets/bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;*/
+	top: 0;
+	left: 0;
+}
+
+body {
+	background-color: var(--bg-color-transparent);
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 5vh;
+}
+
+#gallery-items {
+	margin: 0 auto;
+	max-width: 800vw;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.gallery-image {
+	padding: 1%;
+	margin: 0 auto;
+	max-width: calc(90%);
+	aspect-ratio: 2 / 1;
+}

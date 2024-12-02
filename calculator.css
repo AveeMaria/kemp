@@ -119,3 +119,22 @@ tr.removed, tr.removedByJS {
         margin-right: 0;
     }
 }
+
+input {
+    aspect-ratio: 2 / 1;
+    width: 3em;
+    padding: 0 0.1rem;
+    margin: 0;
+
+    border-radius: 5px;
+    border: none;
+
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+selection , option {
+    aspect-ratio: 2 / 1;
+    width: 3em;
+    padding: 0;
+    margin: 0;
+}

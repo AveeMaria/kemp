@@ -11,7 +11,7 @@
 <body>
 	<header>
 		<nav id="navbar">
-			<img id="logo" src="assets/logo.jpg">
+			<img id="logo" src="assets/logo.jpg" onclick="window.location.href='index.html';">
 			
 			<!--<ul>
 				<li><a href="#calc">Calculate the cost of your stay</a></li>
@@ -50,11 +50,11 @@
 	            <label>Cars: 
 	            	<input type="number" id="cars" placeholder="number of cars" min="0" max="5" value="0">
 				</label>
-
+				<br>
 	            <label>Campers:
 	            	<input type="number" id="campers" placeholder="number of campers" min="0" max="5" value="0">
 	    		</label>
-
+	    		<br>
 	    		<label>Trailers:
 	            	<input type="number" id="trailers" placeholder="number of trailers" min="0" max="5" value="0">
 	    		</label>
@@ -74,7 +74,7 @@
 	            <label>Number of pets: 
 	            	<input type="number" id="pets" placeholder="number of pets" min="0" max="5" value="0">
 				</label>
-	            <br><br>
+	            <br>
 
 	            <label><u>Number of days</u>: 
 	            	<input type="number" id="days" placeholder="number of days" min="1" max="100" value="1" required>
@@ -191,6 +191,6 @@
        	</div>
     </section>
 
-    <script loading="lazy" src="calculator.js" type="text/javascript"></script>
+    <script loading="lazy" src="js/calculator.js" type="text/javascript"></script>
 </body>
 </html>
