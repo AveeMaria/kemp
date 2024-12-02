@@ -7,27 +7,6 @@
 	<link rel="stylesheet" href="style.css">
 	<script type="script.js"></script>
 	<link rel="icon" href="assets/logo.jpg" type="image/x-icon">
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-		const anchorLinks = document.querySelectorAll('a[href^="#"]');
-		  
-		anchorLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-		    event.preventDefault();
-		    
-		    const targetId = this.getAttribute('href').substring(1);
-		    const targetElement = document.getElementById(targetId);
-		      
-		    if (targetElement) {
-			    	targetElement.scrollIntoView({
-			        behavior: 'smooth',
-			        block: 'start'
-		        });
-		      }
-		    });
-		  });
-		});
-	</script>
 </head>
 <body>
 	<header>
@@ -95,11 +74,8 @@
 	<footer>
 		<!--<p>Made by me</p>-->
 	</footer>
-	<script>
-		function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('show');
-        }
-	</script>
+
+	<script src="js/togglemenu.js"></script>
+	<script src="js/slowscroll.js"></script>
 </body>
 </html>
