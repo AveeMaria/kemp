@@ -1,16 +1,20 @@
 #temp-container {
-    max-width: 10vw;
-    max-height: 5vh;
+    max-width: 16vw;
+    max-height: 8vh;
 
     text-align: center;
     align-content: center;
 
     position: absolute;
     right: 0;
+
+    text-align: right;
 }
     
     #river-temp {
-        color: mediumseagreen;
+        color: #80d0b0;
+        font-size: 20px;
+        font-weight: bold;
     }
 
 @media (max-width: 800px) {
@@ -36,4 +40,14 @@ html {
 /* za 50shades of chromium */
 html::-webkit-scrollbar {
     display: none;
+}
+
+
+/* ZA BARVE! */
+@media (prefers-color-scheme: dark) {
+  /* spremen root.css */
+}
+
+@media (prefers-color-scheme: light) {
+  /* spremen root.css  */
 }

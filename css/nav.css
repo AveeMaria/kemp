@@ -40,26 +40,25 @@ nav {
 		}
 
 		.nav-links li a {
+			display: block; /*da loh scale dela*/
 			font-size: 1.2rem;
+			font-size: 25px;
+			font-size: calc(90vw / 8 / 5);
+
 
 			color: var(--navbar-text-color);
-
-			/*filter: invert(1);*/
 
 			font-weight: bold;
 
 			padding: 0;
 			margin: 0;
 			text-decoration: none;
+			transition: 0.2s ease-in-out;
 		}
 
-			.nav-links li a:hover, .nav-links li a:active {
-				padding: 0;
-				margin: 0;
-				text-decoration: none;
+			.nav-links li a:hover {
+				scale: 1.1;
 			}
-
-
 
 
 /* ------------------- MOBILNIKI -------------------  */

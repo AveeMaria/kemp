@@ -1,5 +1,7 @@
 @import url("css/nav.css");
 @import url("css/root.css");
+@import url("css/misc.css");
+
 
 html {
 	font-family:  -apple-system, 'Roboto', 'Helvetica', 'Arial', sans-serif;
@@ -11,25 +13,160 @@ html {
 }
 
 body {
-	background-color: var(--bg-color-transparent);
+	background-color: /*var(--bg-color-transparent)*/white;
 	width: 100%;
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	padding-bottom: 5vh;
+	/*padding-bottom: 5vh;*/
 }
 
-#gallery-items {
-	margin: 0 auto;
-	max-width: 800vw;
+.gallery-container {
+
+	max-width: 100vw;
+	height: 100%;
+
+	padding: 0;
+	margin: 0;
+	margin-top: 3%;
+
 	display: flex;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
-
 }
 
-.gallery-image {
-	padding: 1%;
-	margin: 0 auto;
-	max-width: calc(90%);
-	aspect-ratio: 2 / 1;
+	.gallery-item {
+		max-width: calc(33% - var(--gallery-spacing));
+
+	}
+
+		.gallery-image {
+			max-width: 100%;
+			border: none;
+			border-radius: var(--picture-radius);
+			transition: 0.1s ease-in-out;
+		}
+			.gallery-image:hover {
+				scale: 1.05;
+			}
+
+		.gallery-item p {
+			margin: 0;
+			padding: 0.5em;
+			text-align: center;
+			font-size: var(--text-size);
+		}
+
+
+
+/* za tablce BO ISTO KT ZA FONE HIHI*/
+@media (max-width: 1200px) {
+	.gallery-item {
+		max-width: calc(50% - var(--gallery-spacing));
+	}
+}
+
+/* za telefone */
+@media (max-width: 800px) {
+	.gallery-item {
+		max-width: calc(100% - var(--gallery-spacing));
+	}
+}
+
+
+
+/* #nared vecjo sliko clickable */
+
+
+.nav-exit {
+	/*idk brt*/
+}
+	#nav-exit-button {
+		padding: 1vh;
+	}
+
+.hidden {
+	display: none !important;
+}
+
+
+
+
+
+/* TO JE ZA UN CLICKABLE IMAGE CLOSEUP */
+#detailed-view {
+	max-width: 100vw;
+	max-height: 100vh;
+
+	width: 100vw;
+	height: 100vh;
+
+	top: 0;
+	left: 0;
+	position: sticky;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+
+	z-index: 2;
+
+	background-color: white;
+}
+	#detailed-view-container {
+		display: flex;
+		justify-items: center;
+		align-items: center;
+	}
+
+		#detailed-image {
+			height: 85vh;
+			aspect-ratio: 3 / 2;
+			border-radius: var(--picture-radius);
+		}
+
+	#x-container {
+		text-align: right;
+		width: 100%;
+	}
+
+		#nav-exit-button {
+			height: 10vh;
+			aspect-ratio: 1 / 1;
+			transition: 0.1s ease-in-out;
+		}
+
+			#nav-exit-button:hover {
+				scale: 1.1;
+			}
+
+
+/* ZA FONE */
+@media (max-width: 800px) {
+	nav {
+		display: none;
+	}
+	
+	#detailed-view-container {
+		height: 75vh;
+	}
+
+		#detailed-image {
+			height: auto;
+			aspect-ratio: 3 / 2;
+			width: 98vw;
+		}
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: black;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	body {
+		background-color: white;
+	}
 }

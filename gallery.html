@@ -6,39 +6,85 @@
 	<title>Muhvič | Gallery</title>
 	<link rel="stylesheet" href="gallery.css">
 	<link rel="icon" href="assets/logo.jpg" type="image/x-icon">
+	<script type="text/javascript" src="js/detailedview.js"></script>
 </head>
 <body>
+	<div onload="addHiddenClass();" id="detailed-view" class="hidden">
+		<div id="x-container">
+			<img src="assets/x.svg" onclick="addHiddenClass();" id="nav-exit-button">
+		</div>
+		<div id="detailed-view-container">
+			<img src="gallery/img1.jpg" id="detailed-image">
+		</div>
+	</div>
+
 	<header>
 		<nav id="navbar">
 			<img id="logo" src="assets/logo.jpg" onclick="window.location.href='index.html';">
-			<!--<ul class="nav-links" id="nav-links-list">
-				<li><a onclick="toggleMenu()" href="#watersports">Watersports</a></li>		
-				<li><a onclick="toggleMenu()" href="#cycling">Cycling</a></li>
-				<li><a onclick="toggleMenu()" href="#hiking">Hiking</a></li>
-				<li><a onclick="toggleMenu()" href="#fishing">Fishing</a></li>
-			</ul>-->
-			<img src="assets/menu.svg" onclick="toggleMenu()" class="nav-menu" id="navbar-menu">
 	    </nav>
 	</header>
 
 	<main>
-		<section class="container" id="gallery-items">
-			<img class="gallery-image" src="gallery/img1.jpg" alt="Image 1">
-	        <img class="gallery-image" src="gallery/img2.jpg" alt="Image 2">
-	        <img class="gallery-image" src="gallery/img3.jpg" alt="Image 3">
-	        <img class="gallery-image" src="gallery/img4.jpg" alt="Image 4">
-	        <img class="gallery-image" src="gallery/img5.jpg" alt="Image 5">
-	        <img class="gallery-image" src="gallery/img6.jpg" alt="Image 6">
-	        <img class="gallery-image" src="gallery/img7.jpg" alt="Image 7">
-	        <img class="gallery-image" src="gallery/img8.jpg" alt="Image 8">
-	        <img class="gallery-image" src="gallery/img9.jpg" alt="Image 9">
-	        <img class="gallery-image" src="gallery/img10.jpg" alt="Image 10">
-	        <img class="gallery-image" src="gallery/img11.jpg" alt="Image 11">
-	        <img class="gallery-image" src="gallery/img12.jpg" alt="Image 12">
-		</section>		
+		<div class="gallery-container" id="gallery">
+	        <div class="gallery-item">
+	            <img src="gallery/img1.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 4" loading="lazy">
+	            <p>Image 1</p>
+	        </div>
+	        <div class="gallery-item">
+	            <img src="gallery/img2.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 2" loading="lazy">
+	            <p>Image 2</p>
+	        </div>
+	        <div class="gallery-item">
+	            <img src="gallery/img3.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 3" loading="lazy">
+	            <p>Image 3</p>
+	        </div>
+	        <div class="gallery-item">
+	            <img src="gallery/img4.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 4" loading="lazy">
+	            <p>Image 4</p>
+	        </div>
+	        <div class="gallery-item">
+	            <img src="gallery/img5.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 5" loading="lazy">
+	            <p>Image 5</p>
+	        </div>
+	        <div class="gallery-item">
+	            <img src="gallery/img6.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 6" loading="lazy">
+	            <p>Image 6</p>
+	        </div>
+	        <div class="gallery-item">
+	            <img src="gallery/img7.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 7" loading="lazy">
+	            <p>Image 7</p>
+	        </div>
+	        <div class="gallery-item">
+	            <img src="gallery/img8.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 8" loading="lazy">
+	            <p>Image 8</p>
+	        </div>
+	        <div class="gallery-item">
+	            <img src="gallery/img9.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 9" loading="lazy">
+	            <p>Image 9</p>
+	        </div>
+	        <div class="gallery-item">
+	            <img src="gallery/img10.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 10" loading="lazy">
+	            <p>Image 10</p>
+	        </div>
+	        <div class="gallery-item">
+	            <img src="gallery/img11.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 11" loading="lazy">
+	            <p>Image 11</p>
+	        </div>
+	        <div class="gallery-item">
+	            <img src="gallery/img12.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 12" loading="lazy">
+	            <p>Image 12</p>
+	        </div>
+    	</div>
 	</main>
 
-	<script loading="lazy" src="js/togglemenu.js"></script>
-	<script loading="lazy" src="js/slowscroll.js"></script>
+
+	<script loading="lazy">
+		//for my speedrunning community
+		document.addEventListener('keydown', function(event) {
+	    if (event.key === "Escape" || event.keyCode === 27) {
+	        addHiddenClass();
+	    }
+	});
+	</script>
 </body>
 </html>

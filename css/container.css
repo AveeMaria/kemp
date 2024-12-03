@@ -7,7 +7,7 @@
 	padding: 5%;
 	margin: 5% auto;
 
-	border-radius: 10px;
+	border-radius: var(--obline);
 }
 	.container p, ul, li, a {
 		color: var(--text-color);
@@ -19,6 +19,6 @@
 		padding: 0;
 		margin: 0 auto;
 		background-color: rgba(0, 0, 0, 0);
-		backdrop-filter: none;
+		backdrop-filter: blur(0px);
 		/* to das da ni blura ce je --blur > 0 backdrop-filter: none;*/
 	}

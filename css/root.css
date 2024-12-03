@@ -8,10 +8,16 @@
 	--title-color: #0da55e;/*#CCECE5;*/
 	--footer-color: #544B3D;
 	--container-bg-color: rgba(65, 65, 65, 0.7);/*will the real slim shady please stand up?*/
+
 	--text-weight: 500;
 	--text-size: 1.5rem;
 	--text-size-mobile: 1.2rem;
 	--label-size: 1.5rem;
 	--label-size-mobile: 1.2rem;
+	--obline: 10px;
 	--blur: 10px;
+
+	/* gallery stuff */
+	--gallery-spacing: 30px;
+	--picture-radius: 20px;
 }

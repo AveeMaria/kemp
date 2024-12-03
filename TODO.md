@@ -1,6 +1,6 @@
 # Naredi
 
-- lep dezign
+- lep dezign CHEKISH
 
 - splittej css-e CHECK
 
@@ -10,11 +10,13 @@
 
 - mailto cancer
 
-- rezervacije apartma
+- rezervacije apartma 
 
 - google maps embed properly
 
 - nek crazy kamp video presentation
+
+- dodej barve
 
 ### Activiy page
 
@@ -28,6 +30,6 @@
 
 - kalkulatorij obiska CHECK
 
-- galerija (skor dela) 
+- galerija CHECK
 
 
