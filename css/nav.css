@@ -42,7 +42,6 @@ nav {
 		.nav-links li a {
 			display: block; /*da loh scale dela*/
 			font-size: 1.2rem;
-			font-size: 25px;
 			font-size: calc(90vw / 8 / 5);
 
 
@@ -57,7 +56,7 @@ nav {
 		}
 
 			.nav-links li a:hover {
-				scale: 1.1;
+				scale: 1.05 1.1;
 			}
 
 
@@ -109,6 +108,9 @@ nav {
 		align-content: center;
 	}
 
+		.nav-links li a {
+			font-size: 1.2rem;
+		}
 
 	ul.show {
 		width: 100vw;

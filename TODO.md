@@ -18,6 +18,8 @@
 
 - dodej barve
 
+- PRELOADER (ew)
+
 ### Activiy page
 
 - rafting, kanujing, kayaking, SUP-ing (gif/video tega bi biu crazy!) (timelapse kolpe z kanuji od zgorej)

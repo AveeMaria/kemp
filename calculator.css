@@ -91,8 +91,13 @@ tr.removed, tr.removedByJS {
     display: none;
 }
 
-#receipt_table_footer td, #receipt_table_footer_daily td {
+#receipt_table_footer td, #receipt_table_footer td {
+    
+}
+
+#total_row td{
     font-weight: bold;
+    color: var(--title-color);
 }
 
 #receipt-items {
@@ -102,7 +107,7 @@ tr.removed, tr.removedByJS {
 }
 
 	#receipt-items th {
-    	color: black;
+    	color: var(--text-color);
 	}
 
 @media (max-width: 600px) {

@@ -9,26 +9,6 @@ h1, h2 {
 	letter-spacing: 1px;
 }
 
-#moto-container {
-	height: 90vh;
-	background-size: cover;
-	display: block;
-	text-align: center;
-	align-content: center;
-	background-color: rgba(0,0,0,0);
-	padding: 0;
-	margin: 0;
-	backdrop-filter: blur(0.5px);
-}
-
-	#moto-container h1 {
-		font-weight: 500;
-	}
-
-	#moto-container h2 {
-		font-weight: 500;
-	}
-
 #contact-list {
 	margin: 0 0em;
 	margin-left: 2em;

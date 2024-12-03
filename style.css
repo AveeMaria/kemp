@@ -24,14 +24,40 @@ body {
 	padding: 0;
 	padding-bottom: 5vh;
 }
-
-/*
-footer {
-	background-color: #333;
+#moto-container {
+	height: 90vh;
+	background-size: cover;
+	display: block;
 	text-align: center;
+	align-content: center;
+	background-color: rgba(0,0,0,0);
+	padding: 0;
+	margin: 0;
+	backdrop-filter: blur(0.5px);
+}
 
-	position: relative;
-	width: 100vw;
-	height: 10vh;
-	max-height: 10vh;
-}*/
+	#moto-container h1 {
+		font-size: 3.5em;
+		font-weight: 500;
+	}
+
+	#moto-container h2 {
+		font-weight: 500;
+		font-size: 3.0em;
+	}
+
+	#arrow {
+		width: 50px;
+		aspect-ratio: 1 / 1;
+		animation: up-down 2s infinite;
+	}
+
+	@keyframes up-down { 
+		0%, 100% {
+			transform: translateY(25%);
+		}
+		50% {
+			transform: translateY(-25%);
+		}
+
+	}

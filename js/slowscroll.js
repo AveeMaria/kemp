@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    const anchorLinks = document.querySelectorAll('[href^="#"]');
     
     anchorLinks.forEach(link => {
     link.addEventListener('click', function (event) {

@@ -1,6 +1,6 @@
 :root {
 	--bg-color: #CDCEC6;
-	--bg-color-transparent: rgb(0, 0, 0, 0.25);/*0.6 za tmno*/
+	--bg-color-transparent: rgb(0, 0, 0, 0.5);/*0.6 za tmno*/
 
 	--text-color: #f3f6ff; /*#e8ebf7;*/
 	--navbar-color: #3b9169;

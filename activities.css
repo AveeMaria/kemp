@@ -1,5 +1,26 @@
-@import url("style.css");
+@import url("css/root.css");
+@import url("css/nav.css");
+@import url("css/container.css");
+@import url("css/main.css"),
+@import url("css/misc.css");
+@import url("css/text.css");
+@import url("css/mobile.css");
+@import url("css/btn.css");
 
+html {
+	font-family:  -apple-system, 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	background-image: url(assets/bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	top: 0;
+	left: 0;
+}
 
-
-
+body {
+	background-color: var(--bg-color-transparent);
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 5vh;
+}
