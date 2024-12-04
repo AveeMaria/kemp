@@ -1,7 +1,7 @@
-@import url("css/nav.css");
 @import url("css/root.css");
+@import url("css/preloader.css");
+@import url("css/nav.css");
 @import url("css/misc.css");
-
 
 html {
 	font-family:  -apple-system, 'Roboto', 'Helvetica', 'Arial', sans-serif;
@@ -103,7 +103,7 @@ body {
 
 	top: 0;
 	left: 0;
-	position: sticky;
+	position: fixed;
 
 	display: flex;
 	justify-content: flex-start;

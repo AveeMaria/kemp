@@ -34,7 +34,7 @@
     let trailers = 0;
 
 
-    //da mam quanitiy u arrayu
+    //da mam quanitiy u arrayu (KVA?)
     let qtt = [];
 
 
@@ -327,18 +327,6 @@ document.getElementById('calculate').addEventListener('click', function() {
 
     
 });
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

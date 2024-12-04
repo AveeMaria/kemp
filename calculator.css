@@ -125,7 +125,9 @@ tr.removed, tr.removedByJS {
     }
 }
 
+
 input {
+
     aspect-ratio: 2 / 1;
     width: 3em;
     padding: 0 0.1rem;
@@ -135,6 +137,8 @@ input {
     border: none;
 
     background-color: rgba(255, 255, 255, 0.8);
+
+    font-size: 20px;
 }
 
 selection , option {

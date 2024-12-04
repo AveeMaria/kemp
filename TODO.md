@@ -8,17 +8,19 @@
 
 - slow scroll na linke CHECK
 
-- mailto cancer
+- mailto cancer!!!
 
-- rezervacije apartma 
+- rezervacije apartma!!!
 
-- google maps embed properly
+- google maps embed properly!!!
 
 - nek crazy kamp video presentation
 
 - dodej barve
 
 - PRELOADER (ew)
+
+- language support (JSON)
 
 ### Activiy page
 
@@ -33,5 +35,3 @@
 - kalkulatorij obiska CHECK
 
 - galerija CHECK
-
-

@@ -1,4 +1,5 @@
 @import url("css/root.css"); /*pridifined veljues*/
+@import url("css/preloader.css");
 @import url("css/nav.css");
 @import url("css/container.css");
 @import url("css/main.css");/*html,body...*/
@@ -8,8 +9,7 @@
 @import url("css/btn.css");
 
 html {
-	font-family:  -apple-system, 'Roboto', 'Helvetica', 'Arial', sans-serif;
-	background-image: url(assets/bg.jpg);
+	font-family: -apple-system, 'Roboto', 'Helvetica', 'Arial', sans-serif;
 	background-size: cover;
 	background-attachment: fixed;
 	top: 0;
@@ -17,47 +17,154 @@ html {
 }
 
 body {
-	background-color: var(--bg-color-transparent);
+	background-color: var(--bg-color);
 	width: 100%;
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	padding-bottom: 5vh;
-}
-#moto-container {
-	height: 90vh;
-	background-size: cover;
-	display: block;
-	text-align: center;
-	align-content: center;
-	background-color: rgba(0,0,0,0);
-	padding: 0;
-	margin: 0;
-	backdrop-filter: blur(0.5px);
 }
 
+footer {
+	width: 100vw;
+	overflow: hidden;
+	background-color: #333;
+	text-align: center;
+}
+
+/* CONTACTS SCHENENIGENIJCES */
+
+#contact {
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+}
+
+	#contact-text {
+		text-align: left;
+		padding-bottom: 1rem;
+	}
+
+	#contact-text h2 {
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	#map-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+
+		max-width: 100%;
+		width: 100%;
+	}
+
+	#map-container iframe{
+		max-width: 100% !important;
+		width: 70%;
+		aspect-ratio: 4 / 3;
+		border: none;
+		border-radius: var(--obline);
+	}
+
+@media (max-width: 800px) {
+	#map-container {
+		align-content: flex-end;
+	}
+
+		#map-container iframe {
+			width: 100% !important;
+			aspect-ratio: 1 / 1.5;
+		}
+
+	#contact {
+		flex-wrap: wrap;
+	}
+}
+
+
+
+
+/* k da mamo moto xd */
+#moto-container {
+    position: relative;
+    opacity: 1;
+    height: 90vh;
+    width: 100vw;
+    max-width: 100vw;
+    background-image: url(assets/bg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-content: center;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    backdrop-filter: blur(0.5px);
+}
+
+	/* da sam background cackam */
+	#moto-container::before {
+	    content: '';
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    background: inherit;
+	    filter: brightness(0.5);
+	    pointer-events: none; /*da klikanja ne unic*/
+	    z-index: -1;
+	}
+
 	#moto-container h1 {
-		font-size: 3.5em;
-		font-weight: 500;
+    font-size: 3.5em;
+    font-weight: 500;
 	}
 
 	#moto-container h2 {
-		font-weight: 500;
-		font-size: 3.0em;
+	    font-weight: 500;
+	    font-size: 3.0em;
 	}
 
-	#arrow {
-		width: 50px;
-		aspect-ratio: 1 / 1;
-		animation: up-down 2s infinite;
+	#moto-stuff {
+	    position: relative;
 	}
 
-	@keyframes up-down { 
-		0%, 100% {
-			transform: translateY(25%);
-		}
-		50% {
-			transform: translateY(-25%);
-		}
 
+#arrow {
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    animation: up-down 2s infinite;
+    fill: white;
+}
+
+	@keyframes up-down {
+	    0%, 100% {
+	        transform: translateY(25%);
+	    }
+	    50% {
+	        transform: translateY(-25%);
+	    }
 	}
+
+.moto-decor {
+    z-index: -1;
+    width: 120vw;
+    height: 12vh;
+    position: relative;
+    background-color: var(--bg-color);
+}
+
+	.moto-decor.first {
+	    transform: rotate(1deg) translateY(-3vh);
+	}
+
+	.moto-decor.second {
+	    transform: rotate(-1deg) translateY(3vh);
+	}
+

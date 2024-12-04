@@ -4,12 +4,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Camp Muhvič</title>
+
+	<script loading="lazy" src="js/preloader.js"></script>
+
 	<link rel="stylesheet" href="style.css">
 	<script type="script.js"></script>
 	<link rel="icon" href="assets/logo.jpg" type="image/x-icon">
 </head>
 <body>
-	<header>
+	<div id="preloader">
+		<div id="spinner"></div>
+	</div>
+	<header >
 		<nav>
 			<img class="logo" src="assets/logo.jpg" onclick="window.location.href='index.html';">
 			<ul class="nav-links" id="nav-links-list">
@@ -25,47 +31,57 @@
 	</header>
 	<body>
 		<div id="temp-container"><span id="river-temp">Kolpa: 7.9°C</span></div>
-		<section class="container" id="faking-prvi-otrok">
-			<div id="moto-container">
+
+		<div id="moto-container">
+			<div class="moto-decor first"></div>
+			<div id="moto-stuff">
 				<h1><b>Tourism Muhvič</b></h1>
 				<h2>Since 1994</h2>
-				<a href="#about"><img src="assets/arrow.svg" id="arrow"></a>
+				<a href="#about">
+					<svg id="arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+					<g id="XMLID_2_">
+						<path id="XMLID_4_" d="M464.5,318.8L281.8,501.5c-14,14-37.3,14-52.2,0L46.8,318.8c-14-14-14-37.3,0-52.2c14-14.9,37.3-14,52.2,0
+							l120.3,120.3V36.4c0-20.5,16.8-36.4,36.4-36.4S292,16.8,292,36.4v351.4l120.3-120.3c7.5-7.5,16.8-11.2,26.1-11.2
+							c9.3,0,18.6,3.7,26.1,11.2C479.4,281.5,479.4,304.8,464.5,318.8z"/>
+					</g>
+					</svg>
+				</a>
+				<!--<a href="#about"><img src="assets/arrow.svg" id="arrow"></a>-->
 			</div>
-		</section>
+			<div class="moto-decor second"></div>
+		</div>
+
 		<section id="about" class="container">
 			<h2>About</h2>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Located in the scenic Kolpa valley, our campsite offers a peaceful retreat from the noisy and bland city life. <br>
+			We provide a variety of camping experiences, from tent sites to camper options.</p>
 		</section>
 
 		<section id="contact" class="container">
+			<div id="contact-text">
 			<h2>Contact</h2>
-			<ul id="contact-list">
-				<li><span class="seznam"><a href="mailto:makybregy2@gmail.com">makybregy2@gmail.com</a></span></li>
-				<li><span class="seznam">+386 0000 00 00 0</span></li>				
-				<li><span class="seznam">John Doe strasse 2</span></li>				
-			</ul>
+				<ul id="contact-list">
+					<li><span class="seznam"><a href="mailto:makybregy2@gmail.com">makybregy2@gmail.com</a></span></li>
+					<li><span class="seznam">+386 0000 00 00 0</span></li>				
+					<li><span class="seznam">John Doe strasse 2</span></li>				
+				</ul>
+			</div>
+			<div id="map-container">
+				<iframe id="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d587.9464110575228!2d15.055120039559803!3d45.49477306143981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4764605ce3dbb7a9%3A0x14fdd5b6990757fb!2sKamp%20Muhvi%C4%8D!5e0!3m2!1ssl!2ssi!4v1731762656946!5m2!1ssl!2ssi" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
 		</section>
 		
 		<section id="accomodation" class="container">
 			<h2>Accomodation</h2>
-			<p>We provide space, showers, water and electricity for all our guests. Free wifi also. See our pricelist and calculate price of your visit.</p>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>We provide space, showers, water and electricity for all our guests. Free wifi also.</p>
+			<p>See our <a href="docs/pricelist.pdf">pricelist</a> and <a href="calculator.html">calculate</a> price of your stay/visit.</p>
 		</section>
 	</body>
 	<footer>
-		<!--<p>Made by me</p>-->
+		<p>Made by <a href="https://muhvic.com">Gašper Muhvič</a></p>
 	</footer>
 
 	<script loading="lazy" src="js/togglemenu.js"></script>

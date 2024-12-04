@@ -1,4 +1,5 @@
 @import url("css/root.css");
+@import url("css/preloader.css");
 @import url("css/nav.css");
 @import url("css/container.css");
 @import url("css/main.css"),
@@ -9,7 +10,6 @@
 
 html {
 	font-family:  -apple-system, 'Roboto', 'Helvetica', 'Arial', sans-serif;
-	background-image: url(assets/bg.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	top: 0;

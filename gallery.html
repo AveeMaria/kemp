@@ -4,11 +4,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Muhvič | Gallery</title>
+
+	<script loading="lazy" src="js/preloader.js"></script>
+	
 	<link rel="stylesheet" href="gallery.css">
 	<link rel="icon" href="assets/logo.jpg" type="image/x-icon">
 	<script type="text/javascript" src="js/detailedview.js"></script>
 </head>
+
 <body>
+	<div id="preloader">
+		<div id="spinner"></div>
+	</div>
 	<div onload="addHiddenClass();" id="detailed-view" class="hidden">
 		<div id="x-container">
 			<img src="assets/x.svg" onclick="addHiddenClass();" id="nav-exit-button">
