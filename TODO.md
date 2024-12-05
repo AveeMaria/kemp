@@ -12,13 +12,13 @@
 
 - rezervacije apartma!!!
 
-- google maps embed properly!!!
+- google maps embed properly!!! CHECKISH
 
 - nek crazy kamp video presentation
 
 - dodej barve
 
-- PRELOADER (ew)
+- PRELOADER (ew) CHECKISH
 
 - language support (JSON)
 

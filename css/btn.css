@@ -21,3 +21,62 @@ button {
         transform: translate(2px,2px);
     }
 
+
+/* fancy ahh button */
+
+.switch-button {
+    /*da ga browser ne unic */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: relative;
+
+
+    width: 100%;
+    aspect-ratio: 2 / 1;
+
+    background-color: black;
+    border-radius: 100rem;
+    border: solid 2px #777 ;
+
+    font-size: 50%;
+
+    transition: 0.4s;
+}
+    
+.switch-button::before {
+    top: 2.5%;
+    left: 2.5%;
+
+    content: "";
+    width: 40%;
+
+    aspect-ratio: 1 / 1 !important;
+
+    background-color: white;
+    position: absolute;
+    background-size: 100rem;
+
+    border-radius: 100em;
+    border: solid 2px #777;
+
+    transition: 0.4s;
+}
+
+    .switch-button:checked {
+        background-color: white;
+    }
+
+        .switch-button:checked::before {
+            left: calc(50% + 1.25%);
+
+            content: "";
+            background-color: black;
+
+            position: absolute;
+            background-size: 100%;
+
+            
+            border-radius: 100em;
+        }

@@ -61,7 +61,7 @@ footer {
 		width: 100%;
 	}
 
-	#map-container iframe{
+	#map-container iframe {
 		max-width: 100% !important;
 		width: 70%;
 		aspect-ratio: 4 / 3;
@@ -83,7 +83,6 @@ footer {
 		flex-wrap: wrap;
 	}
 }
-
 
 
 
@@ -168,3 +167,14 @@ footer {
 	    transform: rotate(-1deg) translateY(3vh);
 	}
 
+#settings {
+	aspect-ratio: 2 / 1;
+
+	width: 70px;
+
+	position: absolute;
+	top: 10vh;
+	right: 0;
+
+	z-index: 1;
+}
