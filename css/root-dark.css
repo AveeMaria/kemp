@@ -8,10 +8,12 @@
 	--navbar-text-color: /*hsl(281, 63%, 60%)*/ #333;
 	/*--navbar-text-color: hsl(0, 0%, 20%); /* dobr se vid sam ugly */
 
-	--title-color: #0da55e;/*#CCECE5;*/
+	/*--title-color: #0da55e;/*#CCECE5;*/
+	--title-color: hsl(150, 63%, 55%);
+
 	--footer-color: black;
 	/*--container-bg-color: rgba(65, 65, 65, 0.7);/*will the real slim shady please stand up?*/
-	--container-bg-color: #555;
+	--container-bg-color: #444;
 
 	--text-weight: 500;
 	--text-size: 1.5rem;

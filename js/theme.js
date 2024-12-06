@@ -6,24 +6,21 @@ if (!localStorage.getItem('theme')) {
 loadTheme(getTheme());
 
 function loadTheme(storagetheme) {
-	console.log(storagetheme);
+	//console.log(storagetheme);
     let themeLink = document.getElementById('root-link');
 	let	checkbox = document.getElementById('theme-selector');
 
 	if (storagetheme === 'darkmode') {
         themeLink.setAttribute('href', 'css/root-dark.css');
 		checkbox.checked = true;
-
     } else if(storagetheme === 'lightmode') {
         themeLink.setAttribute('href', 'css/root.css');
 		checkbox.checked = false;
-
     }
 }
 
 function getTheme() {
     let storagetheme = localStorage.getItem('theme');
-
     return storagetheme;
 }
 
