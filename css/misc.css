@@ -34,14 +34,14 @@
 
 /* SCROLLBAR JE ZA BOOMERJE! */
 
-/* za fuherfox */
+/* za fuhrerfox */
 html {
-    scrollbar-width: none;
+    scrollbar-width: none !important;
 }
 
 /* za 50shades of chromium */
 html::-webkit-scrollbar {
-    display: none;
+    display: none !important;
 }
 
 

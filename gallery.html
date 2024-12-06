@@ -5,9 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Muhvič | Gallery</title>
 
+
 	<script loading="lazy" src="js/preloader.js"></script>
 	
+	<link id="root-link" rel="stylesheet" href="css/root.css">
 	<link rel="stylesheet" href="gallery.css">
+
 	<link rel="icon" href="assets/logo.jpg" type="image/x-icon">
 	<script type="text/javascript" src="js/detailedview.js"></script>
 </head>
@@ -18,10 +21,18 @@
 	</div>
 	<div onload="addHiddenClass();" id="detailed-view" class="hidden">
 		<div id="x-container">
-			<img src="assets/x.svg" onclick="addHiddenClass();" id="nav-exit-button">
+			<svg onclick="addHiddenClass();" id="nav-exit-button"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+			<defs>
+			</defs>
+			<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+				<rect x="-8.54" y="34.9" rx="0" ry="0" width="107.09" height="20.19" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(0.7071 -0.7071 0.7071 0.7071 -18.6396 45) "/>
+				<rect x="34.9" y="-8.54" rx="0" ry="0" width="20.19" height="107.09" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(0.7071 -0.7071 0.7071 0.7071 -18.6396 45) "/>
+			</g>
+			</svg>
 		</div>
 		<div id="detailed-view-container">
 			<img src="gallery/img1.jpg" id="detailed-image">
+
 		</div>
 	</div>
 
@@ -93,5 +104,7 @@
 	    }
 	});
 	</script>
+	<script loading="lazy" src="js/theme.js"></script>
+
 </body>
 </html>

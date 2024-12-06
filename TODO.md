@@ -22,6 +22,8 @@
 
 - language support (JSON)
 
+- darkmode/lightmode CHECK
+
 ### Activiy page
 
 - rafting, kanujing, kayaking, SUP-ing (gif/video tega bi biu crazy!) (timelapse kolpe z kanuji od zgorej)
@@ -30,7 +32,7 @@
 
 # Narjeno sam dodaj
 
-- tolplota Kolpe
+- tolplota Kolpe + weather emoji
 
 - kalkulatorij obiska CHECK
 
