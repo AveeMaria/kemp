@@ -10,17 +10,15 @@
 
 - mailto cancer!!!
 
-- rezervacije apartma!!!
+- rezervacije apartma!!! sam sj delam za kamp?
 
 - google maps embed properly!!! CHECKISH
 
-- nek crazy kamp video presentation
-
-- dodej barve
+- nek crazy kamp video presentation čas je denar!!!!
 
 - PRELOADER (ew) CHECKISH
 
-- language support (JSON)
+- language support (JSON) čas je denar!!!!
 
 - darkmode/lightmode CHECK
 
@@ -32,7 +30,7 @@
 
 # Narjeno sam dodaj
 
-- tolplota Kolpe + weather emoji
+- tolplota Kolpe + weather emoji? CHECK
 
 - kalkulatorij obiska CHECK
 

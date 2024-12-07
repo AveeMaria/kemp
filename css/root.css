@@ -1,12 +1,13 @@
 :root {
 	--bg-color: #f0fff5;
+	--anti-bg-color: #333;
+	
 	/*--bg-color-transparent: rgb(0, 0, 0, 0.5);/*0.6 za tmno*/
 
 	--text-color: #f3f6ff; /*#e8ebf7;*/
 	--navbar-color: #3b9169;
 	--navbar-color: hsl(150, 63%, 55%);
 	--navbar-text-color: /*hsl(281, 63%, 60%)*/white;
-	/*--navbar-text-color: hsl(0, 0%, 20%); /* dobr se vid sam ugly */
 
 	/*--title-color: #0da55e;/*#CCECE5;*/
 	--title-color: hsl(150, 63%, 55%);
@@ -26,4 +27,5 @@
 	/* gallery stuff */
 	--gallery-spacing: 30px;
 	--picture-radius: 20px;
+	--gallery-x: black;
 }

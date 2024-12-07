@@ -27,7 +27,7 @@ body {
 
 	padding: 0;
 	margin: 0;
-	margin-top: 3%;
+	margin-top: 5vh;
 
 	display: flex;
 	justify-content: space-evenly;
@@ -54,9 +54,10 @@ body {
 			padding: 0.5em;
 			text-align: center;
 			font-size: var(--text-size);
+
+			color: var(--navbar-text-color);
+			filter: invert(100%);
 		}
-
-
 
 /* za tablce BO ISTO KT ZA FONE HIHI*/
 @media (max-width: 1200px) {
@@ -72,8 +73,6 @@ body {
 	}
 }
 
-
-
 /* #nared vecjo sliko clickable */
 
 
@@ -81,16 +80,13 @@ body {
 	/*idk brt*/
 }
 	#nav-exit-button {
+		aspect-ratio: 1 / 1 !important;
 		padding: 1vh;
 	}
 
 .hidden {
 	display: none !important;
 }
-
-
-
-
 
 /* TO JE ZA UN CLICKABLE IMAGE CLOSEUP */
 #detailed-view {
@@ -109,11 +105,12 @@ body {
 	align-items: center;
 	flex-direction: column;
 
-	z-index: 2;
+	z-index: 20;
 
 	background-color: var(--bg-color);
 }
 	#detailed-view-container {
+
 		display: flex;
 		justify-items: center;
 		align-items: center;
@@ -126,27 +123,28 @@ body {
 		}
 
 	#x-container {
+		height: 10vh;
+
 		text-align: right;
 		width: 100%;
 	}
 
-		#nav-exit-button {
-			height: 10vh;
-			aspect-ratio: 1 / 1;
+		#nav-exit-button svg{
+			max-width: 10vh;
+			max-height: 10vh;
+
 			transition: 0.1s ease-in-out;
+			/*nedelaaa
+			fill: var(--anti-bg-color);*/
 		}
 
-			#nav-exit-button:hover {
+			#nav-exit-button svg:hover {
 				scale: 1.1;
 			}
 
 
 /* ZA FONE */
 @media (max-width: 800px) {
-	nav {
-		display: none;
-	}
-	
 	#detailed-view-container {
 		height: 75vh;
 	}

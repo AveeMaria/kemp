@@ -5,6 +5,7 @@
 @import url("css/main.css");/*html,body...*/
 @import url("css/misc.css");
 @import url("css/text.css");
+@import url("css/form.css");
 @import url("css/btn.css");
 
 html {
@@ -14,7 +15,6 @@ html {
 	top: 0;
 	left: 0;
 }
-
 
 body {
 	background-color: var(--bg-color);
@@ -85,8 +85,6 @@ footer {
 	}
 }
 
-
-
 /* k da mamo moto xd */
 #moto-container {
     position: relative;
@@ -135,7 +133,6 @@ footer {
 	    position: relative;
 	}
 
-
 #arrow {
     width: 50px;
     aspect-ratio: 1 / 1;
@@ -161,7 +158,7 @@ footer {
 }
 
 	.moto-decor.first {
-	    transform: rotate(1deg) translateY(-3vh);
+	    transform: rotate(1deg) translateY(-2vh);
 	}
 
 	.moto-decor.second {
@@ -174,8 +171,8 @@ footer {
 	width: 70px;
 
 	position: absolute;
-	top: 10vh;
-	right: 5px;
+	top: calc(10vh + 2px);
+	right: 2px;
 
 	z-index: 1;
 }

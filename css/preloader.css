@@ -1,8 +1,8 @@
 #preloader {
 	position: fixed;
-	z-index: 100;
+	z-index: 1000;
 	opacity: 1;
-	background-color: var(--bg-color);
+	background-color: #CCC;
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
@@ -33,7 +33,6 @@
     50% {
     	opacity: 0.5;
     }
-
     100% {
     	opacity: 1;
         transform: rotate(360deg);

@@ -5,7 +5,9 @@
 @import url("css/main.css");/*html,body...*/
 @import url("css/misc.css");
 @import url("css/text.css");
-@import url("css/mobile.css");
+@import url("css/form.css");
+@import url("css/btn.css");
+
 
 html {
     font-family:  -apple-system, 'Roboto', 'Helvetica', 'Arial', sans-serif;
@@ -22,7 +24,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden !important;/*NEDELA*/
+    overflow-x: hidden !important;
 }
 
 #calc-receipt {
@@ -135,7 +137,7 @@ tr.removed, tr.removedByJS {
     	color: var(--text-color);
 	}
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     #calc-receipt {
         flex-direction: column;
         align-items: center;
@@ -148,27 +150,6 @@ tr.removed, tr.removedByJS {
     #calc-receipt .container:first-child {
         margin-right: 0;
     }
-}
 
-
-input {
-
-    aspect-ratio: 2 / 1;
-    width: 3em;
-    padding: 0 0.1rem;
-    margin: 0;
-
-    border-radius: 5px;
-    border: none;
-
-    background-color: rgba(255, 255, 255, 0.8);
-
-    font-size: 20px;
-}
-
-selection , option {
-    aspect-ratio: 2 / 1;
-    width: 3em;
-    padding: 0;
-    margin: 0;
+    
 }

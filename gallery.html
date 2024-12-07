@@ -5,13 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Muhvič | Gallery</title>
 
-
 	<script loading="lazy" src="js/preloader.js"></script>
 	
 	<link id="root-link" rel="stylesheet" href="css/root.css">
 	<link rel="stylesheet" href="gallery.css">
 
-	<link rel="icon" href="assets/logo.jpg" type="image/x-icon">
+	<link rel="icon" href="assets/logo.png" type="image/x-icon">
 	<script type="text/javascript" src="js/detailedview.js"></script>
 </head>
 
@@ -19,91 +18,84 @@
 	<div id="preloader">
 		<div id="spinner"></div>
 	</div>
-	<div onload="addHiddenClass();" id="detailed-view" class="hidden">
+	<div loading="lazy" onload="addHiddenClass();" id="detailed-view" class="hidden">
 		<div id="x-container">
-			<svg onclick="addHiddenClass();" id="nav-exit-button"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-			<defs>
-			</defs>
-			<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-				<rect x="-8.54" y="34.9" rx="0" ry="0" width="107.09" height="20.19" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(0.7071 -0.7071 0.7071 0.7071 -18.6396 45) "/>
-				<rect x="34.9" y="-8.54" rx="0" ry="0" width="20.19" height="107.09" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(0.7071 -0.7071 0.7071 0.7071 -18.6396 45) "/>
-			</g>
-			</svg>
+			<div id="nav-exit-button">
+				<svg onclick="addHiddenClass();"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+				<defs>
+				</defs>
+				<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+					<rect x="-8.54" y="34.9" rx="0" ry="0" width="107.09" height="20.19" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(0.7071 -0.7071 0.7071 0.7071 -18.6396 45) "/>
+					<rect x="34.9" y="-8.54" rx="0" ry="0" width="20.19" height="107.09" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(0.7071 -0.7071 0.7071 0.7071 -18.6396 45) "/>
+				</g>
+				</svg>
+			</div>
 		</div>
-		<div id="detailed-view-container">
+		<div loading="lazy" id="detailed-view-container">
 			<img src="gallery/img1.jpg" id="detailed-image">
-
 		</div>
 	</div>
 
 	<header>
 		<nav id="navbar">
-			<img id="logo" src="assets/logo.jpg" onclick="window.location.href='index.html';">
+			<img id="logo" src="assets/logo.png" onclick="window.location.href='index.html';">
 	    </nav>
 	</header>
 
 	<main>
 		<div class="gallery-container" id="gallery">
-	        <div class="gallery-item">
-	            <img src="gallery/img1.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 4" loading="lazy">
-	            <p>Image 1</p>
+	        <div class="gallery-item" loading="lazy">
+	            <img src="gallery/img1.jpg" class="gallery-image" alt="Image 4">
+	            <p class="img-desc">Image 1</p>
 	        </div>
-	        <div class="gallery-item">
-	            <img src="gallery/img2.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 2" loading="lazy">
-	            <p>Image 2</p>
+	        <div class="gallery-item" loading="lazy">
+	            <img src="gallery/img2.jpg" class="gallery-image" alt="Image 2">
+	            <p class="img-desc">Image 2</p>
 	        </div>
-	        <div class="gallery-item">
-	            <img src="gallery/img3.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 3" loading="lazy">
-	            <p>Image 3</p>
+	        <div class="gallery-item" loading="lazy">
+	            <img src="gallery/img3.jpg" class="gallery-image" alt="Image 3">
+	            <p class="img-desc">Image 3</p>
 	        </div>
-	        <div class="gallery-item">
-	            <img src="gallery/img4.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 4" loading="lazy">
-	            <p>Image 4</p>
+	        <div class="gallery-item" loading="lazy">
+	            <img src="gallery/img4.jpg" class="gallery-image" alt="Image 4">
+	            <p class="img-desc">Image 4</p>
 	        </div>
-	        <div class="gallery-item">
-	            <img src="gallery/img5.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 5" loading="lazy">
-	            <p>Image 5</p>
+	        <div class="gallery-item" loading="lazy">
+	            <img src="gallery/img5.jpg" class="gallery-image"  alt="Image 5">
+	            <p class="img-desc">Image 5</p>
 	        </div>
-	        <div class="gallery-item">
-	            <img src="gallery/img6.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 6" loading="lazy">
-	            <p>Image 6</p>
+	        <div class="gallery-item" loading="lazy">
+	            <img src="gallery/img6.jpg" class="gallery-image" alt="Image 6">
+	            <p class="img-desc">Image 6</p>
 	        </div>
-	        <div class="gallery-item">
-	            <img src="gallery/img7.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 7" loading="lazy">
-	            <p>Image 7</p>
+	        <div class="gallery-item" loading="lazy">
+	            <img src="gallery/img7.jpg" class="gallery-image" alt="Image 7">
+	            <p class="img-desc">Image 7</p>
 	        </div>
-	        <div class="gallery-item">
-	            <img src="gallery/img8.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 8" loading="lazy">
-	            <p>Image 8</p>
+	        <div class="gallery-item" loading="lazy">
+	            <img src="gallery/img8.jpg" class="gallery-image" alt="Image 8">
+	            <p class="img-desc">Image 8</p>
 	        </div>
-	        <div class="gallery-item">
-	            <img src="gallery/img9.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 9" loading="lazy">
-	            <p>Image 9</p>
+	        <div class="gallery-item" loading="lazy">
+	            <img src="gallery/img9.jpg" class="gallery-image" alt="Image 9">
+	            <p class="img-desc">Image 9</p>
 	        </div>
-	        <div class="gallery-item">
-	            <img src="gallery/img10.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 10" loading="lazy">
-	            <p>Image 10</p>
+	        <div class="gallery-item" loading="lazy">
+	            <img src="gallery/img10.jpg" class="gallery-image" alt="Image 10">
+	            <p class="img-desc">Image 10</p>
 	        </div>
-	        <div class="gallery-item">
-	            <img src="gallery/img11.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 11" loading="lazy">
-	            <p>Image 11</p>
+	        <div class="gallery-item" loading="lazy">
+	            <img src="gallery/img11.jpg" class="gallery-image" alt="Image 11">
+	            <p class="img-desc">Image 11</p>
 	        </div>
-	        <div class="gallery-item">
-	            <img src="gallery/img12.jpg" class="gallery-image" onclick="removeHiddenClass();" alt="Image 12" loading="lazy">
-	            <p>Image 12</p>
+	        <div class="gallery-item" loading="lazy">
+	            <img src="gallery/img12.jpg" class="gallery-image" alt="Image 12">
+	            <p class="img-desc">Image 12</p>
 	        </div>
     	</div>
 	</main>
 
-
-	<script loading="lazy">
-		//for my speedrunning community
-		document.addEventListener('keydown', function(event) {
-	    if (event.key === "Escape" || event.keyCode === 27) {
-	        addHiddenClass();
-	    }
-	});
-	</script>
+	<script loading="lazy" src="js/gallery.js"></script>
 	<script loading="lazy" src="js/theme.js"></script>
 
 </body>
