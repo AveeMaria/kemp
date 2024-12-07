@@ -4,7 +4,9 @@
 	
 	/*--bg-color-transparent: rgb(0, 0, 0, 0.5);/*0.6 za tmno*/
 
-	--text-color: #f3f6ff; /*#e8ebf7;*/
+	--text-color: #f3f6ff;
+	--text-color: #333;
+
 	--navbar-color: #3b9169;
 	--navbar-color: hsl(150, 63%, 55%);
 	--navbar-text-color: /*hsl(281, 63%, 60%)*/white;
@@ -15,6 +17,7 @@
 	--footer-color: #222;
 	/*--container-bg-color: rgba(65, 65, 65, 0.7);/*will the real slim shady please stand up?*/
 	--container-bg-color: #444;
+	--container-bg-color: #cde9de;
 
 	--text-weight: 500;
 	--text-size: 1.5rem;

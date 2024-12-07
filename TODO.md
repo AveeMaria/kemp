@@ -8,7 +8,7 @@
 
 - slow scroll na linke CHECK
 
-- mailto cancer!!!
+- mailto cancer CHECK
 
 - rezervacije apartma!!! sam sj delam za kamp?
 
