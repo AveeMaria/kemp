@@ -52,3 +52,7 @@ input::placeholder, textarea::placeholder {
     font-size: 0.8rem;
     margin: auto 0;
 }
+
+textarea {
+    resize: none;
+}
