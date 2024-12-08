@@ -1,39 +1,46 @@
-descriptions = ['Camp Muhvič','Campsite Muhvič','upper dam','Kozice hill','Islands and dam', 'Kolpa', 'village beach', 'stream','river valley','island','upper dam', 'river valley'];
+const descriptions = ['Camp Muhvič', 'Campsite Muhvič', 'Upper dam', 'Kozice hill', 'Islands and dam', 'Kolpa', 'Village beach', 'Stream', 'River valley', 'Island', 'Upper dam', 'River valley'];
 
-//usak image dobi description iz arraya
 document.addEventListener('DOMContentLoaded', () => {
-    let galleryDescriptions = document.querySelectorAll('.img-desc');
-    galleryDescriptions.forEach((item, index) => {
-    	//ce bi blo slucajn vec teh slik kt u arrayu
-        if (index < descriptions.length) {
-            item.textContent = descriptions[index];
-        }
-        else {
-            item.textContent = `Image ${index}`;
-        }
+    let galleryItems = document.querySelectorAll('.gallery-item img');
+    
+    //da use slike*alte modifyja
+    galleryItems.forEach((img, index) => {
+        //dobi alt text iz arreya
+        img.alt = descriptions[index] || `Image ${index + 1}`;
+        
+        let descriptionElement = img.parentElement.querySelector('.img-desc');
+        descriptionElement.textContent = descriptions[index] || `Image ${index + 1}`;
+
+        //usm da onclick za slikco menat
+        img.addEventListener('click', () => {
+            changeImage(index + 1);
+        });
     });
 });
 
+function changeImage(imgNumber) {
+    let detailedImg = document.getElementById('detailed-image');
+    
+    let src1x = `gallery/1x/img${imgNumber}.jpg`;
+    let src2x = `gallery/2x/img${imgNumber}.jpg`;
 
-document.addEventListener('DOMContentLoaded', () => {
-	let galleryItems = document.querySelectorAll('.gallery-image');
-	galleryItems.forEach((item, index) => {
-		item.onclick = function() {
-			removeHiddenClass();
-			changeImage(this);
-		};
-		if (index < descriptions.length) {
-            item.alt = descriptions[index];
-        }
-        else {
-            item.alt = `Image ${index}`;
-        }
-	});
-});
+	//da ve ker src dat glede na resolution
+    if (window.devicePixelRatio > 1) {
+		detailedImg.src = src2x;
+	}
+	else {
+		detailedImg.src = src1x;
+	}
 
-function changeImage(element) {
-	let deteiledImg = document.getElementById('detailed-image');
-	deteiledImg.src = element.src;
+    //damo alt, da bo loh hawking vedel kaj je na sliki
+    detailedImg.alt = document.querySelector(`[data-img-number="${imgNumber}"]`).alt;
+
+    //pokaze detailed container
+    document.getElementById('detailed-view').classList.remove('hidden');
+}
+
+function addHiddenClass() {
+    document.getElementById('detailed-view').classList.add('hidden');
 }
 
 //for my speedrunning community

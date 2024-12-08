@@ -9,7 +9,7 @@
 	<link id="root-link" rel="stylesheet" href="css/root.css">
 	<link rel="stylesheet" href="activities.css">
 	
-	<link rel="icon" href="assets/logo.jpg" type="image/x-icon">
+	<link rel="icon" href="assets/logo.png" type="image/x-icon">
 </head>
 <body>
 	<div id="preloader">
@@ -17,7 +17,7 @@
 	</div>
 	<header>
 		<nav id="navbar">
-			<img id="logo" src="assets/logo.jpg" onclick="window.location.href='index.html';">
+			<img id="logo" src="assets/logo.png" onclick="window.location.href='index.html';">
 			<ul class="nav-links" id="nav-links-list">
 				<li><a onclick="toggleMenu()" href="#watersports">Watersports</a></li>		
 				<li><a onclick="toggleMenu()" href="#cycling">Cycling</a></li>
@@ -30,9 +30,31 @@
 
 	<section id="watersports" class="container">
 		<h2>Canoeing, Rafting and SUP-ing</h2>
-		<p>We rent out canoes and SUPs</p>
-		<p>Klele bi biu gif epic</p>
-		<p>Kle nared nek map z slikami: </p>
+		<p>We rent out 6 canoes and 2 SUPs</p>
+
+		<table id="rentables">
+			<tr>
+				<th>Item</th>
+				<th>Price 1h</th>
+				<th>Price 2h</th>
+			</tr>
+			<tr>
+				<td>Canoa</td>
+				<td>7€</td>
+				<td>10€</td>
+			</tr>
+			<tr>
+				<td>SUP</td>
+				<td>7€</td>
+				<td>10€</td>
+			</tr>
+		</table>
+
+		<p>There are also rafting options nearby.</p>
+
+		<!--<p>Klele bi biu gif epic</p>-->
+
+		<!--<p>Kle nared nek map z slikami: </p>
 		<ul>
 			<li>otocek</li>
 			<li>pesek</li>
@@ -43,12 +65,13 @@
 			<li>un kamn</li>
 			<li>skalca</li>
 			<li>plaza</li>
-		</ul>
+		</ul>-->
+
 	</section>
 
 	<section id="cycling" class="container">
 		<h2>Cycling</h2>
-		<p>kle rabm nek downloadable in interactive map</p>
+		<!--
 		<ul>
 			<li>predgrad</li>
 			<li>sodevci</li>
@@ -69,19 +92,36 @@
 			<li>Sodevske stene</li>
 			<li>Dečinska stena (Wtf)</li>
 			<li>Mala radenska stena</li>
-		</ul>
+		</ul>-->
 	</section>
 
 	<section id="hiking" class="container">
 		<h2>Hiking</h2>
-		<p>kle rabm nek downloadable in interactive map</p>
-		<ul>
-			<li>...</li>
-			<li>Kujzice(gozdna/cesta)</li>
-			<li>Predgrad</li>
-			<li>Prelesje</li>
-			<li>Orlova stena</li>
-		</ul>
+		<p>There are some very nice hiking spots nearby.</p>
+
+
+		<table id="hiking-table">
+			<tr>
+				<th>Name</th>
+				<th>Difficulty</th>
+				<th>Estimated time</th>
+			</tr>
+			<tr>
+				<td><a href="https://planinarenje.hr/staze/razdrto-orlova-stijena?odrediste=orlova-stijena"  target="_blank" rel="noopener noreferrer">Orlova stijena (Croatia)</a></td>
+				<td>Easy</td>
+				<td>20-30minutes</td>
+			</tr>
+			<tr>
+				<td><a href="https://www.hribi.net/gora/kozice/25/3325" target="_blank" rel="noopener noreferrer">Kozice</a></td>
+				<td>Medium</td>
+				<td>20-30minutes</td>
+			</tr>
+			<tr>
+				<td><a href="dodej_svoj_link" target="_blank" rel="noopener noreferrer">Predgrad</a></td>
+				<td>Easy</td>
+				<td>15-20minutes</td>
+			</tr>
+		</table>
 	</section>
 
 	<section id="fishing" class="container">

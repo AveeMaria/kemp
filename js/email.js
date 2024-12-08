@@ -35,6 +35,9 @@ function sendMail() {
 	setTimeout(() => {
 		//0%A je newline zato da pol napise kdo je mail poslou
 		let mailtoLink = `mailto:${camp_email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}%0A%0ASent by: ${encodeURIComponent(email)}`;
+
+		alert('Sent');
+
 		window.location.href = mailtoLink;
 	}, 250);
 }

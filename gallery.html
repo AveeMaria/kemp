@@ -21,78 +21,78 @@
 	<div loading="lazy" onload="addHiddenClass();" id="detailed-view" class="hidden">
 		<div id="x-container">
 			<div id="nav-exit-button">
-				<svg onclick="addHiddenClass();"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-				<defs>
-				</defs>
-				<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-					<rect x="-8.54" y="34.9" rx="0" ry="0" width="107.09" height="20.19" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(0.7071 -0.7071 0.7071 0.7071 -18.6396 45) "/>
-					<rect x="34.9" y="-8.54" rx="0" ry="0" width="20.19" height="107.09" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(0.7071 -0.7071 0.7071 0.7071 -18.6396 45) "/>
+				<svg onclick="addHiddenClass();" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+				<defs></defs>
+				<g style="stroke: none; fill: rgb(0,0,0);">
+					<rect x="-8.54" y="34.9" width="107.09" height="20.19" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -18.6396 45)"/>
+					<rect x="34.9" y="-8.54" width="20.19" height="107.09" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -18.6396 45)"/>
 				</g>
 				</svg>
 			</div>
 		</div>
 		<div loading="lazy" id="detailed-view-container">
-			<img src="gallery/img1.jpg" id="detailed-image">
+			<img src="gallery/1x/img1.jpg" id="detailed-image" alt="Detailed Image">
 		</div>
 	</div>
 
 	<header>
 		<nav id="navbar">
-			<img id="logo" src="assets/logo.png" onclick="window.location.href='index.html';">
-	    </nav>
+			<img id="logo" src="assets/logo.png" onclick="window.location.href='index.html';" alt="Logo">
+		</nav>
 	</header>
 
 	<main>
 		<div class="gallery-container" id="gallery">
-	        <div class="gallery-item" loading="lazy">
-	            <img src="gallery/img1.jpg" class="gallery-image" alt="Image 4">
-	            <p class="img-desc">Image 1</p>
-	        </div>
-	        <div class="gallery-item" loading="lazy">
-	            <img src="gallery/img2.jpg" class="gallery-image" alt="Image 2">
-	            <p class="img-desc">Image 2</p>
-	        </div>
-	        <div class="gallery-item" loading="lazy">
-	            <img src="gallery/img3.jpg" class="gallery-image" alt="Image 3">
-	            <p class="img-desc">Image 3</p>
-	        </div>
-	        <div class="gallery-item" loading="lazy">
-	            <img src="gallery/img4.jpg" class="gallery-image" alt="Image 4">
-	            <p class="img-desc">Image 4</p>
-	        </div>
-	        <div class="gallery-item" loading="lazy">
-	            <img src="gallery/img5.jpg" class="gallery-image"  alt="Image 5">
-	            <p class="img-desc">Image 5</p>
-	        </div>
-	        <div class="gallery-item" loading="lazy">
-	            <img src="gallery/img6.jpg" class="gallery-image" alt="Image 6">
-	            <p class="img-desc">Image 6</p>
-	        </div>
-	        <div class="gallery-item" loading="lazy">
-	            <img src="gallery/img7.jpg" class="gallery-image" alt="Image 7">
-	            <p class="img-desc">Image 7</p>
-	        </div>
-	        <div class="gallery-item" loading="lazy">
-	            <img src="gallery/img8.jpg" class="gallery-image" alt="Image 8">
-	            <p class="img-desc">Image 8</p>
-	        </div>
-	        <div class="gallery-item" loading="lazy">
-	            <img src="gallery/img9.jpg" class="gallery-image" alt="Image 9">
-	            <p class="img-desc">Image 9</p>
-	        </div>
-	        <div class="gallery-item" loading="lazy">
-	            <img src="gallery/img10.jpg" class="gallery-image" alt="Image 10">
-	            <p class="img-desc">Image 10</p>
-	        </div>
-	        <div class="gallery-item" loading="lazy">
-	            <img src="gallery/img11.jpg" class="gallery-image" alt="Image 11">
-	            <p class="img-desc">Image 11</p>
-	        </div>
-	        <div class="gallery-item" loading="lazy">
-	            <img src="gallery/img12.jpg" class="gallery-image" alt="Image 12">
-	            <p class="img-desc">Image 12</p>
-	        </div>
-    	</div>
+			<div class="gallery-item" loading="lazy">
+				<img data-img-number="1" src="gallery/1x_thumbnail/img1.jpg" srcset="gallery/1x_thumbnail/img1.jpg 1x, gallery/2x_thumbnail/img1.jpg 2x" class="gallery-image" alt="">
+				<p class="img-desc"></p>
+			</div>
+			<div class="gallery-item" loading="lazy">
+				<img data-img-number="2" src="gallery/1x_thumbnail/img2.jpg" srcset="gallery/1x_thumbnail/img2.jpg 1x, gallery/2x_thumbnail/img2.jpg 2x" class="gallery-image" alt="">
+				<p class="img-desc"></p>
+			</div>
+			<div class="gallery-item" loading="lazy">
+				<img data-img-number="3" src="gallery/1x_thumbnail/img3.jpg" srcset="gallery/1x_thumbnail/img3.jpg 1x, gallery/2x_thumbnail/img3.jpg 2x" class="gallery-image" alt="">
+				<p class="img-desc"></p>
+			</div>
+			<div class="gallery-item" loading="lazy">
+				<img data-img-number="4" src="gallery/1x_thumbnail/img4.jpg" srcset="gallery/1x_thumbnail/img4.jpg 1x, gallery/2x_thumbnail/img4.jpg 2x" class="gallery-image" alt="">
+				<p class="img-desc"></p>
+			</div>
+			<div class="gallery-item" loading="lazy">
+				<img data-img-number="5" src="gallery/1x_thumbnail/img5.jpg" srcset="gallery/1x_thumbnail/img5.jpg 1x, gallery/2x_thumbnail/img5.jpg 2x" class="gallery-image" alt="">
+				<p class="img-desc"></p>
+			</div>
+			<div class="gallery-item" loading="lazy">
+				<img data-img-number="6" src="gallery/1x_thumbnail/img6.jpg" srcset="gallery/1x_thumbnail/img6.jpg 1x, gallery/2x_thumbnail/img6.jpg 2x" class="gallery-image" alt="">
+				<p class="img-desc"></p>
+			</div>
+			<div class="gallery-item" loading="lazy">
+				<img data-img-number="7" src="gallery/1x_thumbnail/img7.jpg" srcset="gallery/1x_thumbnail/img7.jpg 1x, gallery/2x_thumbnail/img7.jpg 2x" class="gallery-image" alt="">
+				<p class="img-desc"></p>
+			</div>
+			<div class="gallery-item" loading="lazy">
+				<img data-img-number="8" src="gallery/1x_thumbnail/img8.jpg" srcset="gallery/1x_thumbnail/img8.jpg 1x, gallery/2x_thumbnail/img8.jpg 2x" class="gallery-image" alt="">
+				<p class="img-desc"></p>
+			</div>
+			<div class="gallery-item" loading="lazy">
+				<img data-img-number="9" src="gallery/1x_thumbnail/img9.jpg" srcset="gallery/1x_thumbnail/img9.jpg 1x, gallery/2x_thumbnail/img9.jpg 2x" class="gallery-image" alt="">
+				<p class="img-desc"></p>
+			</div>
+			<div class="gallery-item" loading="lazy">
+				<img data-img-number="10" src="gallery/1x_thumbnail/img10.jpg" srcset="gallery/1x_thumbnail/img10.jpg 1x, gallery/2x_thumbnail/img10.jpg 2x" class="gallery-image" alt="">
+				<p class="img-desc"></p>
+			</div>
+			<div class="gallery-item" loading="lazy">
+				<img data-img-number="11" src="gallery/1x_thumbnail/img11.jpg" srcset="gallery/1x_thumbnail/img11.jpg 1x, gallery/2x_thumbnail/img11.jpg 2x" class="gallery-image" alt="">
+				<p class="img-desc"></p>
+			</div>
+			<div class="gallery-item" loading="lazy">
+				<img data-img-number="12" src="gallery/1x_thumbnail/img12.jpg" srcset="gallery/1x_thumbnail/img12.jpg 1x, gallery/2x_thumbnail/img12.jpg 2x" class="gallery-image" alt="">
+				<p class="img-desc"></p>
+			</div>
+
+	 	</div>
 	</main>
 
 	<script loading="lazy" src="js/gallery.js"></script>
