@@ -24,19 +24,85 @@ body {
 	padding-bottom: 5vh;
 }
 
+@media (max-width: 800px) {
+	table {
+		width: 100% !important;
+	}
+
+	td, th {
+		border: var(--text-color) solid 1px;
+	}
+
+	/*da kaze sam pomembne stvari na fonu*/
+	th:nth-child(4), td:nth-child(4) {
+		display: none;
+	}
+}
+
 #rentables {
-	border: black solid 1px;
+	margin: 20px 0;
+	border: var(--text-color) solid 1px;
 	border-collapse: collapse;
 	width: 50%;
 	max-width: 100%;
 }
 
-#rentables th {
-	text-align: center;
-	border: black solid 1px;
+	#rentables th {
+		text-align: center;
+		border: var(--text-color) solid 1px;
+	}
+
+	#rentables td {
+		text-align: center;
+		border: none;
+	}
+
+	#rentables td, th {
+		color: var(--text-color);
+	}
+
+#hiking-table {
+	margin: 20px 0;
+	border: var(--text-color) solid 1px;
+	border-collapse: collapse;
+	width: 50%;
+	max-width: 100%;
 }
 
-#rentables td {
-	text-align: center;
-	border: none;
+	#hiking-table td, th{
+		color: var(--text-color);
+	}
+
+	#hiking-table th{
+		border: var(--text-color) solid 1px;
+	}
+
+	#hiking-table a {
+		font-size: unset;
+		color: var(--text-color);
+		color: var(--title-color);
+	}
+
+#cycling-table {
+	margin: 20px 0;
+	border: var(--text-color) solid 1px;
+	border-collapse: collapse;
+	width: 70%;
+	max-width: 100%;
 }
+
+	#cycling-table td, th{
+		color: var(--text-color);
+	}
+
+	#cycling-table th{
+		border: var(--text-color) solid 1px;
+	}
+
+	#cycling-table a {
+		font-size: unset;
+		color: var(--text-color);
+		color: var(--title-color);
+	}
+
+

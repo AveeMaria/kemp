@@ -148,7 +148,11 @@ tr.removed, tr.removedByJS {
 
     #calc-receipt .container:first-child {
         margin-right: 0;
-    }
+    }   
+}
 
-    
+#people label {
+    font-size: 1.1rem;
+    letter-spacing: -0.5px;
+    font-weight: 600;
 }

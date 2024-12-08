@@ -32,6 +32,13 @@ footer {
 	overflow: hidden !important;	
 }
 
+	footer p, footer a {
+		color: white;
+	}
+	footer a {
+		text-decoration: underline;
+	}
+
 /* CONTACTS SCHENENIGENIJCES */
 
 #contact {
