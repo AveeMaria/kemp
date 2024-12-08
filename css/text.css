@@ -15,8 +15,13 @@ h1, h2 {
 	padding: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 p, a {
 	color: var(--text-color);
+	color: var(--title-color);
 	font-size: var(--text-size);
 	font-weight: var(--text-weight);
 }
@@ -28,10 +33,12 @@ p, a {
 
 /*to je za kalkulatorij*/
 .container label {
+	line-height: 35px;	
     margin-left: 1em;
 	font-size: var(--label-size);
     color: var(--text-color);
 }
+
 
 /* ------------------- MOBILNIKI -------------------  */
 
@@ -39,7 +46,6 @@ p, a {
 	
 	/*MANJSHI THEXT*/
 	p, a {
-		color: var(--text-color);
 		font-size: var(--text-size-mobile);
 		font-weight: var(--text-weight);
 	}

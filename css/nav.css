@@ -38,33 +38,40 @@ nav {
 			margin: 0;
 			align-content: center;
 		}
+			.nav-links li a {
+				text-decoration: none;
+				display: block; /*da loh scale dela*/
+				
+				font-size: 1.2rem;
+				font-size: calc(90vw / 8 / 5);
+				color: var(--navbar-text-color);
+				font-weight: bold;
 
-		.nav-links li a {
-			display: block; /*da loh scale dela*/
-			font-size: 1.2rem;
-			font-size: calc(90vw / 8 / 5);
+				margin: 0;				
+				padding: 0;
+				padding-bottom: 2px;
 
+				background: linear-gradient(black 50%, transparent 50%);
+				
+				background-size: 0% 2px;/*da je line 0 u startu*/
+				background-repeat: no-repeat;
+				background-position: center bottom;/*da je crta spodi centr zacetk*/  
+				
+				transition: background-size 0.2s ease-out;
 
-			color: var(--navbar-text-color);
-
-			font-weight: bold;
-
-			padding: 0;
-			margin: 0;
-			text-decoration: none;
-			transition: 0.2s ease-in-out;
-		}
-
-			.nav-links li a:hover {
-				scale: 1.05 1.1;
+				transition: 0.2s ease-in-out;/*za scale*/
 			}
+				.nav-links li a:hover {
+					background-size: 200% 2px;/*da raztegne crtico*/
+					transform: scale(1.05, 1.1);
+				}
 
 
 /* ------------------- MOBILNIKI -------------------  */
 
 @media (max-width: 800px) {
 	nav {
-	    position: relative; /* Needed for z-index to take effect */
+	    position: relative;
 	    z-index: 10;
 	}
 
@@ -97,9 +104,9 @@ nav {
 	}
 
 		.nav-links.show {
-	        transform: translateY(0); /* Brings it into view */
-		    opacity: 1;				/* Make it visible */
-	    	z-index: -1; /*zkj je treba doktorirat iz tega wtf*/
+	        transform: translateY(0);
+		    opacity: 1;
+	    	z-index: -1;/*zkj je treba doktorirat iz tega wtf*/
 		}
 
 	.nav-links li {
