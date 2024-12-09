@@ -3,6 +3,7 @@ button {
 }
 
 .btn {
+    cursor: pointer;
     background-color: #80d0B0;
     border-radius: 0.5em;
     border: none;
@@ -24,6 +25,7 @@ button {
 /* fancy ahh button */
 
 .switch-button {
+    cursor: pointer;
     /*da ga browser ne unic */
     -webkit-appearance: none;
     -moz-appearance: none;

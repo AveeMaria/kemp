@@ -4,9 +4,6 @@
 
 html {
 	font-family:  -apple-system, 'Roboto', 'Helvetica', 'Arial', sans-serif;
-	/*background-image: url(assets/bg.jpg);
-	background-size: cover;
-	background-attachment: fixed;*/
 	top: 0;
 	left: 0;
 }
@@ -17,7 +14,6 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	/*padding-bottom: 5vh;*/
 }
 
 .gallery-container {
@@ -73,17 +69,6 @@ body {
 	}
 }
 
-/* #nared vecjo sliko clickable */
-
-
-.nav-exit {
-	/*idk brt*/
-}
-	#nav-exit-button {
-		aspect-ratio: 1 / 1 !important;
-		padding: 1vh;
-	}
-
 .hidden {
 	display: none !important;
 }
@@ -100,58 +85,49 @@ body {
 	left: 0;
 	position: fixed;
 
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-direction: column;
-
 	z-index: 20;
 
 	background-color: var(--bg-color);
 }
 	#detailed-view-container {
-
-		display: flex;
-		justify-items: center;
-		align-items: center;
+		text-align: center;
 	}
 
 		#detailed-image {
+			padding: 10vh 0vw;
 			height: 85vh;
 			aspect-ratio: 3 / 2;
 			border-radius: var(--picture-radius);
 		}
 
 	#x-container {
+		position: fixed;
+		right: 0;
+		top: 0;
+
 		height: 10vh;
+		width: 10vh;
 
 		text-align: right;
-		width: 100%;
+
+		transition: 0.1s ease-in-out;
 	}
 
-		#nav-exit-button svg{
-			max-width: 10vh;
-			max-height: 10vh;
-
-			transition: 0.1s ease-in-out;
-			/*nedelaaa
-			fill: var(--anti-bg-color);*/
+		#x-container:hover {
+			scale: 1.1;
 		}
 
-			#nav-exit-button svg:hover {
-				scale: 1.1;
-			}
-
+#x-container svg {
+	width: 100%;
+	height: 100%;
+}
 
 /* ZA FONE */
 @media (max-width: 800px) {
-	#detailed-view-container {
-		height: 75vh;
-	}
-
-		#detailed-image {
+	#detailed-image {
 			height: auto;
 			aspect-ratio: 3 / 2;
 			width: 98vw;
+			padding: 30vh 0;
 		}
 }
