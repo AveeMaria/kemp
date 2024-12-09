@@ -72,6 +72,7 @@ footer {
 	#map-container iframe {
 		max-width: 100% !important;
 		width: 70%;
+		height: 100%;
 		aspect-ratio: 4 / 3;
 		border: none;
 		border-radius: var(--obline);
