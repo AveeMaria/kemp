@@ -116,27 +116,26 @@ footer {
 
 	/* da sam background cackam */
 	#moto-container::before {
-	    content: '';
-	    position: absolute;
-	    top: 0;
-	    left: 0;
-	    right: 0;
-	    bottom: 0;
-	    background: inherit;
-	    filter: brightness(0.5);
-	    pointer-events: none; /*da klikanja ne unic*/
-	    z-index: -1;
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: inherit;
+		filter: brightness(0.6);
+		z-index: -1;
 	}
 
-	#moto-container h1 {
-    font-size: 3.5em;
-    font-weight: 500;
-	}
+		#moto-container h1 {
+			font-size: 3.5em;
+			font-weight: 500;
+		}
 
-	#moto-container h2 {
-	    font-weight: 500;
-	    font-size: 3.0em;
-	}
+		#moto-container h2 {
+			font-weight: 500;
+			font-size: 3.0em;
+		}
 
 	#moto-stuff {
 	    position: relative;
@@ -148,7 +147,6 @@ footer {
     animation: up-down 2s infinite;
     fill: white;
 }
-
 	@keyframes up-down {
 	    0%, 100% {
 	        transform: translateY(25%);
@@ -165,7 +163,6 @@ footer {
     position: relative;
     background-color: var(--bg-color);
 }
-
 	.moto-decor.first {
 	    transform: rotate(1deg) translateY(-2vh);
 	}
